@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C2492C62C95D100008B9FC9 /* TipBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2492C52C95D100008B9FC9 /* TipBarView.swift */; };
 		0C5EC55F2C86EDA000865908 /* sideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5EC55E2C86EDA000865908 /* sideEffect.swift */; };
+		0C6E75832C973F8300D90F0D /* list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E75822C973F8300D90F0D /* list.swift */; };
 		0C9D5D2B2C6A42870037E1B0 /* MedicalDictApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */; };
 		0C9D5D2D2C6A42870037E1B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2C2C6A42870037E1B0 /* ContentView.swift */; };
 		0C9D5D2F2C6A42880037E1B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		0C2492C52C95D100008B9FC9 /* TipBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipBarView.swift; sourceTree = "<group>"; };
 		0C5EC55E2C86EDA000865908 /* sideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideEffect.swift; sourceTree = "<group>"; };
+		0C6E75822C973F8300D90F0D /* list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = list.swift; sourceTree = "<group>"; };
 		0C9D5D272C6A42870037E1B0 /* MedicalDict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalDict.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDictApp.swift; sourceTree = "<group>"; };
 		0C9D5D2C2C6A42870037E1B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			children = (
 				E2BCA0D22C77470700D58470 /* medicineData.json */,
 				0CE8C5822C8D689D00C91E09 /* temp.swift */,
+				0C6E75822C973F8300D90F0D /* list.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				0C9D5D2D2C6A42870037E1B0 /* ContentView.swift in Sources */,
 				0C5EC55F2C86EDA000865908 /* sideEffect.swift in Sources */,
+				0C6E75832C973F8300D90F0D /* list.swift in Sources */,
 				0C9D5D2B2C6A42870037E1B0 /* MedicalDictApp.swift in Sources */,
 				E212A73C2C7DD95700B0B667 /* Usage.swift in Sources */,
 				0CC6A8DA2C7C92CC0063972A /* ListView.swift in Sources */,

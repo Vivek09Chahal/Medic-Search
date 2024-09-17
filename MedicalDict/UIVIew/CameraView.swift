@@ -6,13 +6,6 @@
 //
 
 import SwiftUI
+import AVFoundation
 
-struct CameraView: View {
-    var body: some View {
-        Text("Hello, World!")
-    }
-}
 
-#Preview {
-    CameraView()
-}

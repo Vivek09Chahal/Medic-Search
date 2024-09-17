@@ -13,14 +13,13 @@ struct TipBarView: View {
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false){
-            LazyHStack(spacing: 22) {
+            LazyHStack() {
                 ForEach(0 ..< length, id: \.self) { index in
                     ZStack{
                         Image("img")
                             .resizable()
                             .clipShape(RoundedRectangle(cornerRadius: 25.0))
                             .frame(width: 300, height: 200)
-                            .padding(.horizontal, 45)
                             .blur(radius: 3)
                         
                         Text(DailyTips.tips[index])
@@ -28,6 +27,7 @@ struct TipBarView: View {
                             .foregroundStyle(.black)
                             .frame(width:300, height: 200)
                     }
+                    .containerRelativeFrame(.horizontal)
                     .visualEffect { content, proxy in
                         content
                             .rotation3DEffect(.degrees(-proxy.frame(in: .global).minX) / 8, axis: (x: 0, y: 1, z: 0))
