@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,7 +21,6 @@
 		0CE8C5832C8D689D00C91E09 /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE8C5822C8D689D00C91E09 /* temp.swift */; };
 		0CFC4C832C8773EE00813FE4 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC4C822C8773EE00813FE4 /* Description.swift */; };
 		E212A73C2C7DD95700B0B667 /* Usage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212A73B2C7DD95700B0B667 /* Usage.swift */; };
-		E26BCE8F2C75F041000D0D09 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BCE8E2C75F041000D0D09 /* CameraView.swift */; };
 		E2B64CC12C7F27C50027D693 /* Precautions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B64CC02C7F27C50027D693 /* Precautions.swift */; };
 		E2BCA0D32C77470700D58470 /* medicineData.json in Resources */ = {isa = PBXBuildFile; fileRef = E2BCA0D22C77470700D58470 /* medicineData.json */; };
 		E2BCA0D52C77478F00D58470 /* Medicin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D42C77478F00D58470 /* Medicin.swift */; };
@@ -45,13 +44,16 @@
 		0CE8C5822C8D689D00C91E09 /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
 		0CFC4C822C8773EE00813FE4 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		E212A73B2C7DD95700B0B667 /* Usage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usage.swift; sourceTree = "<group>"; };
-		E26BCE8E2C75F041000D0D09 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		E2B64CC02C7F27C50027D693 /* Precautions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Precautions.swift; sourceTree = "<group>"; };
 		E2BCA0D22C77470700D58470 /* medicineData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = medicineData.json; sourceTree = "<group>"; };
 		E2BCA0D42C77478F00D58470 /* Medicin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicin.swift; sourceTree = "<group>"; };
 		E2BCA0D62C7749AF00D58470 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		E2BCA0D82C774B3800D58470 /* DescriptionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0C24443D2C9B374200837D5A /* cameraViewFile */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = cameraViewFile; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0C9D5D242C6A42870037E1B0 /* Frameworks */ = {
@@ -87,8 +89,8 @@
 				E2BCA0D82C774B3800D58470 /* DescriptionPage.swift */,
 				E212A73A2C7DD93D00B0B667 /* DescriptionPageView */,
 				E212A7382C7DD8CB00B0B667 /* UIVIew */,
-				E212A7392C7DD8EF00B0B667 /* Data */,
 				E27F46B62C74A0D3008C08E4 /* Data */,
+				0C24443D2C9B374200837D5A /* cameraViewFile */,
 				0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */,
 				0C9D5D302C6A42880037E1B0 /* Preview Content */,
 			);
@@ -110,20 +112,8 @@
 				0CC6A8D92C7C92CC0063972A /* ListView.swift */,
 				0C9D5D3A2C6A42F40037E1B0 /* DictView.swift */,
 				0C2492C52C95D100008B9FC9 /* TipBarView.swift */,
-				E26BCE8E2C75F041000D0D09 /* CameraView.swift */,
 			);
 			path = UIVIew;
-			sourceTree = "<group>";
-		};
-		E212A7392C7DD8EF00B0B667 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				E2BCA0D62C7749AF00D58470 /* ModelData.swift */,
-				E2BCA0D42C77478F00D58470 /* Medicin.swift */,
-				0CE8C5802C8CE5A900C91E09 /* Dailytips.swift */,
-			);
-			name = Data;
-			path = UIVIew/Data;
 			sourceTree = "<group>";
 		};
 		E212A73A2C7DD93D00B0B667 /* DescriptionPageView */ = {
@@ -141,9 +131,12 @@
 		E27F46B62C74A0D3008C08E4 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				E2BCA0D22C77470700D58470 /* medicineData.json */,
-				0CE8C5822C8D689D00C91E09 /* temp.swift */,
+				E2BCA0D62C7749AF00D58470 /* ModelData.swift */,
+				E2BCA0D42C77478F00D58470 /* Medicin.swift */,
+				0CE8C5802C8CE5A900C91E09 /* Dailytips.swift */,
 				0C6E75822C973F8300D90F0D /* list.swift */,
+				0CE8C5822C8D689D00C91E09 /* temp.swift */,
+				E2BCA0D22C77470700D58470 /* medicineData.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -162,6 +155,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0C24443D2C9B374200837D5A /* cameraViewFile */,
 			);
 			name = MedicalDict;
 			productName = MedicalDict;
@@ -225,7 +221,6 @@
 				0C9D5D2B2C6A42870037E1B0 /* MedicalDictApp.swift in Sources */,
 				E212A73C2C7DD95700B0B667 /* Usage.swift in Sources */,
 				0CC6A8DA2C7C92CC0063972A /* ListView.swift in Sources */,
-				E26BCE8F2C75F041000D0D09 /* CameraView.swift in Sources */,
 				0CFC4C832C8773EE00813FE4 /* Description.swift in Sources */,
 				0CAACDBF2C82FD640097230E /* HowToUseView.swift in Sources */,
 				0C2492C62C95D100008B9FC9 /* TipBarView.swift in Sources */,
