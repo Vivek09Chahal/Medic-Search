@@ -96,7 +96,7 @@ struct DescriptionPage: View {
         }
         
         .ignoresSafeArea()
-        .toolbar(.hidden, for: .tabBar)
+//        .toolbar(.hidden, for: .tabBar)
     }
 }
 

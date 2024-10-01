@@ -12,10 +12,6 @@ struct ContentView: View {
     var body: some View {
         TabView{
             DictView()
-                .tabItem { Image(systemName: "magnifyingglass") }
-            
-            CameraView()
-                .tabItem { Image(systemName: "camera.viewfinder") }
         }
     }
 }
