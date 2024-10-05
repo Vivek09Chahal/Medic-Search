@@ -3,7 +3,6 @@
 //  MedicalDict
 //
 //  Created by Vivek Chahal on 03/09/24.
-///Users/vivekchahal/Library/Mobile Documents/com~apple~CloudDocs/MedicalDict/MedicalDict/DescriptionPageView/HowToUseView.swift
 
 import SwiftUI
 

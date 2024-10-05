@@ -11,7 +11,13 @@ struct ContentView: View {
     
     var body: some View {
         TabView{
-            DictView()
+            Tab("", systemImage: "magnifyingglass.circle") {
+                mainView()
+            }
+            
+            Tab("", systemImage: "figure.outdoor.soccer"){
+                TipBarView()
+            }
         }
     }
 }

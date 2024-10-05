@@ -16,12 +16,7 @@ struct DictView: View {
         NavigationStack {
             ZStack{
                 VStack{
-                    Spacer()
                     ListView(searchResults: searchResults)
-                    TipBarView()
-                        .foregroundStyle(.pink.gradient.opacity(2.0))
-                        .frame(maxHeight: 1000)
-                        .navigationTitle("Search Medicine")
                 }
             }
         }
@@ -31,7 +26,7 @@ struct DictView: View {
         if searchText.isEmpty {
             return nameList
         } else {
-            return nameList.filter { $0.contains(searchText) }
+            return nameList.filter { $0.lowercased().contains(searchText.lowercased()) }
         }
     }
 }
