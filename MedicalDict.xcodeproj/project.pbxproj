@@ -3,30 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0C2492C62C95D100008B9FC9 /* TipBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2492C52C95D100008B9FC9 /* TipBarView.swift */; };
 		0C5EC55F2C86EDA000865908 /* sideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5EC55E2C86EDA000865908 /* sideEffect.swift */; };
-		0C6E75832C973F8300D90F0D /* list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E75822C973F8300D90F0D /* list.swift */; };
+		0C9885572CB96B9C0017599C /* gameViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9885562CB96B9C0017599C /* gameViewTest.swift */; };
+		0C98855A2CB96DE00017599C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9885592CB96DE00017599C /* ContentView.swift */; };
 		0C9D5D2B2C6A42870037E1B0 /* MedicalDictApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */; };
-		0C9D5D2D2C6A42870037E1B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2C2C6A42870037E1B0 /* ContentView.swift */; };
 		0C9D5D2F2C6A42880037E1B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */; };
 		0C9D5D322C6A42880037E1B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9D5D312C6A42880037E1B0 /* Preview Assets.xcassets */; };
-		0C9D5D3B2C6A42F40037E1B0 /* DictView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D5D3A2C6A42F40037E1B0 /* DictView.swift */; };
-		0CAACDBF2C82FD640097230E /* HowToUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAACDBE2C82FD640097230E /* HowToUseView.swift */; };
-		0CC6A8DA2C7C92CC0063972A /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6A8D92C7C92CC0063972A /* ListView.swift */; };
 		0CE8C5812C8CE5A900C91E09 /* Dailytips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE8C5802C8CE5A900C91E09 /* Dailytips.swift */; };
-		0CE8C5832C8D689D00C91E09 /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE8C5822C8D689D00C91E09 /* temp.swift */; };
-		0CFC4C832C8773EE00813FE4 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC4C822C8773EE00813FE4 /* Description.swift */; };
-		E212A73C2C7DD95700B0B667 /* Usage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212A73B2C7DD95700B0B667 /* Usage.swift */; };
+		E212A73C2C7DD95700B0B667 /* viewInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212A73B2C7DD95700B0B667 /* viewInView.swift */; };
 		E298217F2CB0002700CD61EB /* sideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298217E2CB0002700CD61EB /* sideBarView.swift */; };
-		E2B64CC12C7F27C50027D693 /* Precautions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B64CC02C7F27C50027D693 /* Precautions.swift */; };
+		E2AFA70E2CB7DA650033C695 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFA70D2CB7DA650033C695 /* GameView.swift */; };
 		E2BCA0D32C77470700D58470 /* medicineData.json in Resources */ = {isa = PBXBuildFile; fileRef = E2BCA0D22C77470700D58470 /* medicineData.json */; };
 		E2BCA0D52C77478F00D58470 /* Medicin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D42C77478F00D58470 /* Medicin.swift */; };
 		E2BCA0D72C7749AF00D58470 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D62C7749AF00D58470 /* ModelData.swift */; };
 		E2BCA0D92C774B3800D58470 /* DescriptionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D82C774B3800D58470 /* DescriptionPage.swift */; };
+		E2F6D8372CB7DB8A0013BF6E /* StringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D8362CB7DB8A0013BF6E /* StringView.swift */; };
+		E2F6D8392CB7E0E40013BF6E /* quizQuetions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D8382CB7E0E40013BF6E /* quizQuetions.swift */; };
+		E2F6D83E2CB7E5A50013BF6E /* gameData.json in Resources */ = {isa = PBXBuildFile; fileRef = E2F6D83D2CB7E5A50013BF6E /* gameData.json */; };
+		E2F6D8402CB7E5E00013BF6E /* gameVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D83F2CB7E5E00013BF6E /* gameVariables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,30 +33,25 @@
 		0C2444412C9BF8FE00837D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0C2492C52C95D100008B9FC9 /* TipBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipBarView.swift; sourceTree = "<group>"; };
 		0C5EC55E2C86EDA000865908 /* sideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideEffect.swift; sourceTree = "<group>"; };
-		0C6E75822C973F8300D90F0D /* list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = list.swift; sourceTree = "<group>"; };
+		0C9885562CB96B9C0017599C /* gameViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewTest.swift; sourceTree = "<group>"; };
+		0C9885592CB96DE00017599C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0C9D5D272C6A42870037E1B0 /* MedicalDict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalDict.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDictApp.swift; sourceTree = "<group>"; };
-		0C9D5D2C2C6A42870037E1B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C9D5D312C6A42880037E1B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0C9D5D3A2C6A42F40037E1B0 /* DictView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictView.swift; sourceTree = "<group>"; };
-		0CAACDBE2C82FD640097230E /* HowToUseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseView.swift; sourceTree = "<group>"; };
-		0CC6A8D92C7C92CC0063972A /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		0CE8C5802C8CE5A900C91E09 /* Dailytips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dailytips.swift; sourceTree = "<group>"; };
-		0CE8C5822C8D689D00C91E09 /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
-		0CFC4C822C8773EE00813FE4 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
-		E212A73B2C7DD95700B0B667 /* Usage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usage.swift; sourceTree = "<group>"; };
+		E212A73B2C7DD95700B0B667 /* viewInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewInView.swift; sourceTree = "<group>"; };
 		E298217E2CB0002700CD61EB /* sideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideBarView.swift; sourceTree = "<group>"; };
-		E2B64CC02C7F27C50027D693 /* Precautions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Precautions.swift; sourceTree = "<group>"; };
+		E2AFA70D2CB7DA650033C695 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		E2BCA0D22C77470700D58470 /* medicineData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = medicineData.json; sourceTree = "<group>"; };
 		E2BCA0D42C77478F00D58470 /* Medicin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicin.swift; sourceTree = "<group>"; };
 		E2BCA0D62C7749AF00D58470 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		E2BCA0D82C774B3800D58470 /* DescriptionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionPage.swift; sourceTree = "<group>"; };
+		E2F6D8362CB7DB8A0013BF6E /* StringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringView.swift; sourceTree = "<group>"; };
+		E2F6D8382CB7E0E40013BF6E /* quizQuetions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizQuetions.swift; sourceTree = "<group>"; };
+		E2F6D83D2CB7E5A50013BF6E /* gameData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gameData.json; sourceTree = "<group>"; };
+		E2F6D83F2CB7E5E00013BF6E /* gameVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameVariables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		0C24443D2C9B374200837D5A /* cameraViewFile */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = cameraViewFile; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0C9D5D242C6A42870037E1B0 /* Frameworks */ = {
@@ -70,6 +64,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C9885552CB96B860017599C /* TestFile */ = {
+			isa = PBXGroup;
+			children = (
+				0C9885562CB96B9C0017599C /* gameViewTest.swift */,
+			);
+			path = TestFile;
+			sourceTree = "<group>";
+		};
+		0C9885582CB96D850017599C /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				E2AFA70D2CB7DA650033C695 /* GameView.swift */,
+				E2F6D83F2CB7E5E00013BF6E /* gameVariables.swift */,
+				E2F6D8382CB7E0E40013BF6E /* quizQuetions.swift */,
+				E2F6D83D2CB7E5A50013BF6E /* gameData.json */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		0C98855B2CB96E810017599C /* TipFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0C2492C52C95D100008B9FC9 /* TipBarView.swift */,
+				0CE8C5802C8CE5A900C91E09 /* Dailytips.swift */,
+			);
+			path = TipFiles;
+			sourceTree = "<group>";
+		};
 		0C9D5D1E2C6A42870037E1B0 = {
 			isa = PBXGroup;
 			children = (
@@ -91,12 +113,13 @@
 			children = (
 				0C2444412C9BF8FE00837D5A /* Info.plist */,
 				0C2444402C9BCB6200837D5A /* MedicalDict.entitlements */,
-				E2BCA0D82C774B3800D58470 /* DescriptionPage.swift */,
 				0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */,
 				E212A73A2C7DD93D00B0B667 /* DescriptionPageView */,
 				E212A7382C7DD8CB00B0B667 /* UIVIew */,
-				0C24443D2C9B374200837D5A /* cameraViewFile */,
-				E27F46B62C74A0D3008C08E4 /* Data */,
+				0C98855B2CB96E810017599C /* TipFiles */,
+				E27F46B62C74A0D3008C08E4 /* ListsData */,
+				0C9885582CB96D850017599C /* Game */,
+				0C9885552CB96B860017599C /* TestFile */,
 				0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */,
 				0C9D5D302C6A42880037E1B0 /* Preview Content */,
 			);
@@ -114,11 +137,8 @@
 		E212A7382C7DD8CB00B0B667 /* UIVIew */ = {
 			isa = PBXGroup;
 			children = (
-				0C9D5D2C2C6A42870037E1B0 /* ContentView.swift */,
-				0CC6A8D92C7C92CC0063972A /* ListView.swift */,
-				0C9D5D3A2C6A42F40037E1B0 /* DictView.swift */,
-				0C2492C52C95D100008B9FC9 /* TipBarView.swift */,
 				E298217E2CB0002700CD61EB /* sideBarView.swift */,
+				0C9885592CB96DE00017599C /* ContentView.swift */,
 			);
 			path = UIVIew;
 			sourceTree = "<group>";
@@ -126,26 +146,22 @@
 		E212A73A2C7DD93D00B0B667 /* DescriptionPageView */ = {
 			isa = PBXGroup;
 			children = (
-				E212A73B2C7DD95700B0B667 /* Usage.swift */,
-				E2B64CC02C7F27C50027D693 /* Precautions.swift */,
-				0CAACDBE2C82FD640097230E /* HowToUseView.swift */,
+				E2BCA0D82C774B3800D58470 /* DescriptionPage.swift */,
+				E212A73B2C7DD95700B0B667 /* viewInView.swift */,
 				0C5EC55E2C86EDA000865908 /* sideEffect.swift */,
-				0CFC4C822C8773EE00813FE4 /* Description.swift */,
+				E2F6D8362CB7DB8A0013BF6E /* StringView.swift */,
 			);
 			path = DescriptionPageView;
 			sourceTree = "<group>";
 		};
-		E27F46B62C74A0D3008C08E4 /* Data */ = {
+		E27F46B62C74A0D3008C08E4 /* ListsData */ = {
 			isa = PBXGroup;
 			children = (
 				E2BCA0D62C7749AF00D58470 /* ModelData.swift */,
 				E2BCA0D42C77478F00D58470 /* Medicin.swift */,
-				0CE8C5802C8CE5A900C91E09 /* Dailytips.swift */,
-				0C6E75822C973F8300D90F0D /* list.swift */,
-				0CE8C5822C8D689D00C91E09 /* temp.swift */,
 				E2BCA0D22C77470700D58470 /* medicineData.json */,
 			);
-			path = Data;
+			path = ListsData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +178,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				0C24443D2C9B374200837D5A /* cameraViewFile */,
 			);
 			name = MedicalDict;
 			productName = MedicalDict;
@@ -210,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2BCA0D32C77470700D58470 /* medicineData.json in Resources */,
+				E2F6D83E2CB7E5A50013BF6E /* gameData.json in Resources */,
 				0C9D5D322C6A42880037E1B0 /* Preview Assets.xcassets in Resources */,
 				0C9D5D2F2C6A42880037E1B0 /* Assets.xcassets in Resources */,
 			);
@@ -222,22 +236,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C9D5D2D2C6A42870037E1B0 /* ContentView.swift in Sources */,
+				E2F6D8402CB7E5E00013BF6E /* gameVariables.swift in Sources */,
 				0C5EC55F2C86EDA000865908 /* sideEffect.swift in Sources */,
-				0C6E75832C973F8300D90F0D /* list.swift in Sources */,
 				0C9D5D2B2C6A42870037E1B0 /* MedicalDictApp.swift in Sources */,
-				E212A73C2C7DD95700B0B667 /* Usage.swift in Sources */,
-				0CC6A8DA2C7C92CC0063972A /* ListView.swift in Sources */,
-				0CFC4C832C8773EE00813FE4 /* Description.swift in Sources */,
-				0CAACDBF2C82FD640097230E /* HowToUseView.swift in Sources */,
+				E212A73C2C7DD95700B0B667 /* viewInView.swift in Sources */,
 				0C2492C62C95D100008B9FC9 /* TipBarView.swift in Sources */,
 				0CE8C5812C8CE5A900C91E09 /* Dailytips.swift in Sources */,
 				E2BCA0D72C7749AF00D58470 /* ModelData.swift in Sources */,
+				E2F6D8372CB7DB8A0013BF6E /* StringView.swift in Sources */,
 				E2BCA0D52C77478F00D58470 /* Medicin.swift in Sources */,
-				0CE8C5832C8D689D00C91E09 /* temp.swift in Sources */,
-				0C9D5D3B2C6A42F40037E1B0 /* DictView.swift in Sources */,
+				E2AFA70E2CB7DA650033C695 /* GameView.swift in Sources */,
+				E2F6D8392CB7E0E40013BF6E /* quizQuetions.swift in Sources */,
+				0C9885572CB96B9C0017599C /* gameViewTest.swift in Sources */,
 				E298217F2CB0002700CD61EB /* sideBarView.swift in Sources */,
-				E2B64CC12C7F27C50027D693 /* Precautions.swift in Sources */,
+				0C98855A2CB96DE00017599C /* ContentView.swift in Sources */,
 				E2BCA0D92C774B3800D58470 /* DescriptionPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = MedicalDict/MedicalDict.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -393,9 +406,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mycompany.MedicalDict;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -404,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = MedicalDict/MedicalDict.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -428,9 +445,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mycompany.MedicalDict;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

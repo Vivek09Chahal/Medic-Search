@@ -1,0 +1,233 @@
+[
+    {
+        "text": "Which vitamin is most abundant in oranges?",
+        "answers": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+        "correctAnswer": "Vitamin C"
+    },
+    {
+        "text": "What is the main benefit of dietary fiber?",
+        "answers": ["Builds muscle", "Improves digestion", "Increases energy", "Strengthens bones"],
+        "correctAnswer": "Improves digestion"
+    },
+    {
+        "text": "Which of the following is a healthy fat?",
+        "answers": ["Trans fat", "Saturated fat", "Monounsaturated fat", "None of the above"],
+        "correctAnswer": "Monounsaturated fat"
+    },
+    {
+        "text": "Which mineral is important for bone health?",
+        "answers": ["Iron", "Calcium", "Potassium", "Sodium"],
+        "correctAnswer": "Calcium"
+    },
+    {
+        "text": "What is the primary function of red blood cells?",
+        "answers": ["Fight infections", "Carry oxygen", "Clot blood", "Produce hormones"],
+        "correctAnswer": "Carry oxygen"
+    },
+    {
+        "text": "Which nutrient is essential for muscle repair?",
+        "answers": ["Carbohydrates", "Proteins", "Fats", "Vitamins"],
+        "correctAnswer": "Proteins"
+    },
+    {
+        "text": "What is the main source of energy for the body?",
+        "answers": ["Proteins", "Fats", "Carbohydrates", "Vitamins"],
+        "correctAnswer": "Carbohydrates"
+    },
+    {
+        "text": "Which vitamin is known as the sunshine vitamin?",
+        "answers": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+        "correctAnswer": "Vitamin D"
+    },
+    {
+        "text": "Which food is a good source of omega-3 fatty acids?",
+        "answers": ["Chicken", "Salmon", "Beef", "Pork"],
+        "correctAnswer": "Salmon"
+    },
+    {
+        "text": "What is the recommended daily intake of water for adults?",
+        "answers": ["1-2 liters", "2-3 liters", "3-4 liters", "4-5 liters"],
+        "correctAnswer": "2-3 liters"
+    },
+    {
+        "text": "Which vitamin helps in blood clotting?",
+        "answers": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin K"],
+        "correctAnswer": "Vitamin K"
+    },
+    {
+        "text": "What is the main function of dietary protein?",
+        "answers": ["Provide energy", "Build and repair tissues", "Store fat", "Regulate body temperature"],
+        "correctAnswer": "Build and repair tissues"
+    },
+    {
+        "text": "Which mineral is crucial for oxygen transport in the blood?",
+        "answers": ["Calcium", "Iron", "Magnesium", "Zinc"],
+        "correctAnswer": "Iron"
+    },
+    {
+        "text": "Which vitamin is essential for vision?",
+        "answers": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+        "correctAnswer": "Vitamin A"
+    },
+    {
+        "text": "Which nutrient is important for maintaining healthy skin?",
+        "answers": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin E"],
+        "correctAnswer": "Vitamin E"
+    },
+    {
+        "text": "Which mineral helps regulate fluid balance in the body?",
+        "answers": ["Calcium", "Potassium", "Sodium", "Magnesium"],
+        "correctAnswer": "Sodium"
+    },
+    {
+        "text": "Which vitamin is important for immune function?",
+        "answers": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+        "correctAnswer": "Vitamin C"
+    },
+    {
+        "text": "Which food is a good source of dietary fiber?",
+        "answers": ["Chicken", "Broccoli", "Beef", "Fish"],
+        "correctAnswer": "Broccoli"
+    },
+    {
+        "text": "Which vitamin is important for bone health?",
+        "answers": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+        "correctAnswer": "Vitamin D"
+    },
+    {
+        "text": "Which mineral is important for muscle function?",
+        "answers": ["Calcium", "Iron", "Potassium", "Zinc"],
+        "correctAnswer": "Potassium"
+    },
+    {
+        "text": "Which vitamin is important for red blood cell formation?",
+        "answers": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+        "correctAnswer": "Vitamin B12"
+    },
+    {
+        "text": "Which nutrient is important for brain function?",
+        "answers": ["Carbohydrates", "Proteins", "Fats", "Vitamins"],
+        "correctAnswer": "Fats"
+    },
+    {
+        "text": "Which vitamin is important for skin health?",
+        "answers": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin E"],
+        "correctAnswer": "Vitamin E"
+    },
+    {
+        "text": "Which mineral is important for thyroid function?",
+        "answers": ["Calcium", "Iron", "Iodine", "Magnesium"],
+        "correctAnswer": "Iodine"
+    },
+    {
+        "text": "Which vitamin is important for energy production?",
+        "answers": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+        "correctAnswer": "Vitamin B"
+    },
+    {
+        "text": "Which food is a good source of protein?",
+        "answers": ["Apple", "Chicken", "Carrot", "Bread"],
+        "correctAnswer": "Chicken"
+    },
+    {
+        "text": "Which vitamin is important for collagen production?",
+        "answers": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+        "correctAnswer": "Vitamin C"
+    },
+    {
+        "text": "Which mineral is important for heart health?",
+        "answers": ["Calcium", "Iron", "Potassium", "Magnesium"],
+        "correctAnswer": "Magnesium"
+    },
+    {
+        "text": "Which vitamin is important for nerve function?",
+        "answers": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+        "correctAnswer": "Vitamin B12"
+    },
+    {
+        "text": "Which nutrient is important for healthy hair?",
+        "answers": ["Carbohydrates", "Proteins", "Fats", "Vitamins"],
+        "correctAnswer": "Proteins"
+    },
+    {
+        "text": "Which vitamin is important for antioxidant protection?",
+        "answers": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin E"],
+        "correctAnswer": "Vitamin E"
+    },
+    {
+        "text": "Which mineral is important for blood pressure regulation?",
+        "answers": ["Calcium", "Iron", "Potassium", "Sodium"],
+        "correctAnswer": "Potassium"
+    },
+    {
+        "text": "Which vitamin is important for DNA synthesis?",
+        "answers": ["Vitamin A", "Vitamin B9", "Vitamin C", "Vitamin D"],
+        "correctAnswer": "Vitamin B9"
+    },
+    {
+        "text": "Which food is a good source of healthy fats?",
+        "answers": ["Avocado", "Butter", "Cheese", "Bacon"],
+        "correctAnswer": "Avocado"
+    },
+    {
+        "text": "Which vitamin is important for wound healing?",
+        "answers": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+        "correctAnswer": "Vitamin C"
+    },
+    {
+        "text": "Which mineral is important for enzyme function?",
+        "answers": ["Calcium", "Iron", "Zinc", "Magnesium"],
+        "correctAnswer": "Zinc"
+    },
+    {
+        "text": "Which vitamin is important for hormone production?",
+        "answers": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+        "correctAnswer": "Vitamin D"
+    },
+    {
+        "text": "Which nutrient is important for immune health?",
+        "answers": ["Carbohydrates", "Proteins", "Fats", "Vitamins"],
+        "correctAnswer": "Vitamins"
+    },
+    {
+        "text": "Which vitamin is important for cell growth?",
+        "answers": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+        "correctAnswer": "Vitamin A"
+    },
+    {
+        "text": "Which vitamin is vital for wound healing?",
+        "answers": ["Vitamin C", "Vitamin D", "Vitamin K", "Vitamin E"],
+        "correctAnswer": "Vitamin C"
+    },
+    {
+        "text": "What is the best source of Vitamin B12?",
+        "answers": ["Lentils", "Eggs", "Chicken", "Leafy greens"],
+        "correctAnswer": "Eggs"
+    },
+    {
+        "text": "Which vitamin supports calcium absorption?",
+        "answers": ["Vitamin A", "Vitamin D", "Vitamin E", "Vitamin K"],
+        "correctAnswer": "Vitamin D"
+    },
+    {
+        "text": "What is the primary function of Vitamin A?",
+        "answers": ["Cell repair", "Eye health", "Heart health", "Bone strength"],
+        "correctAnswer": "Eye health"
+    },
+    {
+        "text": "Which nutrient is necessary for DNA synthesis?",
+        "answers": ["Vitamin A", "Folate", "Vitamin D", "Iron"],
+        "correctAnswer": "Folate"
+    },
+    {
+        "text": "Which vitamin helps protect cells from oxidative stress?",
+        "answers": ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin E"],
+        "correctAnswer": "Vitamin E"
+    },
+    {
+        "text": "Which mineral is important for nerve signaling?",
+        "answers": ["Calcium", "Magnesium", "Zinc", "Phosphorus"],
+        "correctAnswer": "Magnesium"
+    }
+]
+ 

@@ -18,5 +18,6 @@ struct DailyTips {
         "Maintain Good Posture: Whether sitting or standing, maintaining good posture can prevent back and neck pain.",
         "Take Regular Breaks: This prevents burnout and reduces strain on your body.",
         "Wash Your Hands Regularly: Washing your hands frequently helps prevent the spread of germs and reduces your risk of infections.",
+        "Stay Socially Connected: Maintaining strong relationships with friends, family, and community can improve emotional well-being and reduce feelings of loneliness."
     ]
 }

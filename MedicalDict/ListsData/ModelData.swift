@@ -37,7 +37,7 @@
 import Foundation
 import SwiftUI
 
-func loadJSONData() -> [Medicine] {
+func loadMedicineJSONData() -> [Medicine] {
     guard let url = Bundle.main.url(forResource: "medicineData", withExtension: "json")
     else {
         fatalError("Failed to locate medicineData.json in bundle.")

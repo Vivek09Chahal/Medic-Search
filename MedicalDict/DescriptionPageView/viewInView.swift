@@ -1,29 +1,28 @@
 //
-//  Prediction.swift
+//  Usage.swift
 //  MedicalDict
 //
-//  Created by Vivek on 28/08/24.
+//  Created by Vivek on 27/08/24.
 //
 
 import SwiftUI
 
-struct Precautions: View {
+struct viewInView: View {
     
-    @State var PrecData: [String]
+    @State var arrayData: [String]
     
     var body: some View {
         ScrollView(showsIndicators: false){
             VStack(alignment: .leading){
-                ForEach(PrecData, id: \.self) {
+                ForEach(arrayData, id: \.self) {
                     name in Text("•\(name)")
                         .font(.subheadline)
                 }
             }
-            .padding(3)
         }
     }
 }
 
 #Preview {
-    Precautions(PrecData: ["gsdcb", "jdcuy"])
+    viewInView(arrayData: ["gsdcb", "jdcuy"])
 }

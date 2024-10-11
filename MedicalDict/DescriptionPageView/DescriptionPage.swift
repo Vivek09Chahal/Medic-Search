@@ -14,7 +14,7 @@ struct DescriptionPage: View {
     var body: some View {
         ScrollView(showsIndicators: false){
             VStack(alignment: .center){
-                Image(medicine.medicineName)
+                Image("img")
                     .resizable()
                     .frame(height: 300)
                 
@@ -34,17 +34,33 @@ struct DescriptionPage: View {
                 
                 ZStack(alignment: .leading){
                     ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
-                    Description(description: medicine.description)
+                    StringView(title: "Description", summary: medicine.description, imageString: "stethoscope")
                         .frame(height: 100)
-                        .padding(5)
+                        .padding(.leading)
                 }
                 .padding(.horizontal, 2)
                 
                 HStack{
                     // Usage
+                    Spacer()
                     VStack{
                         Section("Usage"){
-                            Usage(usageData: medicine.uses)
+                            viewInView(arrayData: medicine.uses)
+                                .frame(width: 165, height: 100)
+                                .padding(.leading)
+                        }
+                    }
+                    .background(
+                        RoundedRectangle(cornerRadius: 25)
+                            .foregroundStyle(.thinMaterial)
+                            .shadow(radius: 5)
+                    )
+                    
+                    Spacer()
+                    
+                    VStack{
+                        Section("Precautions"){
+                            viewInView(arrayData: medicine.precautions)
                                 .frame(width: 165, height: 100)
                                 .padding(.leading)
                         }
@@ -59,8 +75,8 @@ struct DescriptionPage: View {
                     
                     // Precautions
                     VStack{
-                        Section("Precautions"){
-                            Precautions(PrecData: medicine.precautions)
+                        Section("Interaction"){
+                            viewInView(arrayData: medicine.interactions)
                                 .frame(width: 165, height: 100)
                                 .padding(.leading)
                         }
@@ -70,6 +86,7 @@ struct DescriptionPage: View {
                             .foregroundStyle(.thinMaterial)
                             .shadow(radius: 5)
                     )
+                    Spacer()
                 }
                 .padding(2)
             }
@@ -77,7 +94,7 @@ struct DescriptionPage: View {
             // Way To Use
             ZStack(alignment: .topLeading){
                 ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
-                HowToUseView(howToUseData: medicine.howToUse)
+                StringView(title: "How To Use", summary: medicine.howToUse, imageString: "checkmark.seal.fill")
                     .frame(height: 100)
                     .padding(.leading)
             }
@@ -93,8 +110,23 @@ struct DescriptionPage: View {
                     .padding(.leading)
             }
             .padding(2)
+            
+            ZStack(alignment: .leading){
+                ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
+                StringView(title: "Storage Instruction", summary: medicine.storageInstructions, imageString: "shippingbox.fill")
+                    .frame(height: 100)
+                    .padding(.leading)
+            }
+            .padding(.horizontal, 2)
+            
+            ZStack(alignment: .leading){
+                ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
+                StringView(title: "Warning", summary: medicine.warnings, imageString: "exclamationmark.triangle.fill")
+                    .frame(height: 100)
+                    .padding(.leading)
+            }
+            .padding(.horizontal, 2)
         }
-        
         .ignoresSafeArea()
 //        .toolbar(.hidden, for: .tabBar)
     }

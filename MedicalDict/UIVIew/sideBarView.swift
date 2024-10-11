@@ -9,7 +9,7 @@ import SwiftUI
 
 struct mainView: View {
     
-    @State private var medicines: [Medicine] = loadJSONData()
+    @State private var medicines: [Medicine] = loadMedicineJSONData()
     @State private var searchText: String = ""
     @State private var searchIsActive = false
     @State var selectedMedicine: Medicine? // Selected medicine state
@@ -24,13 +24,17 @@ struct mainView: View {
                     }
                 }
             }
+            .navigationSplitViewColumnWidth(250)
             // Detail view
         } detail: {
             if let selectedMedicine = selectedMedicine {
                 DescriptionPage(medicine: selectedMedicine)
                     .id(selectedMedicine.medicineName) // Force the detail view to refresh on each selection // Pass the selected medicine to the detail view
             } else {
-                Text("Select a medicine to see the details")
+                Text("To ensure good health:")
+                Text("Eat lightly, breathe deeply, live moderately, cultivate cheerfulness")
+                Text("And maintain an interest in life.")
+                Text("To know about any medicine, Search in Sidebar")
             }
         }
         .searchable(text: $searchText, isPresented: $searchIsActive, prompt: "Search Here")
