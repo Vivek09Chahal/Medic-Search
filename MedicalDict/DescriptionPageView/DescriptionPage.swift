@@ -12,123 +12,132 @@ struct DescriptionPage: View {
     @State var medicine: Medicine
     
     var body: some View {
-        ScrollView(showsIndicators: false){
-            VStack(alignment: .center){
-                Image("img")
-                    .resizable()
-                    .frame(height: 300)
-                
-                ZStack{
-                    HStack{
-                        Image(systemName: "pills.fill")
-                            .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .topLeading, endPoint: .bottomTrailing))
-                        Text("\(medicine.medicineName) ")
-                            .font(.title)
-                            .foregroundStyle(.black)
+        ZStack{
+            
+            Image("descriptionImage")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+            
+            ScrollView(showsIndicators: false){
+                VStack(alignment: .center){
+                    Image("img")
+                        .resizable()
+                        .frame(height: 300)
+                    
+                    ZStack{
+                        HStack{
+                            Image(systemName: "pills.fill")
+                                .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                            Text("\(medicine.medicineName) ")
+                                .font(.title)
+                                .foregroundStyle(.black)
+                        }
+                        .padding(7)
                     }
-                    .padding(7)
+                    .background(.white)
+                    .cornerRadius(35)
+                    .offset(x: 0, y:-35)
+                    
+                    ZStack(alignment: .leading){
+                        ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
+                        StringView(title: "Description", summary: medicine.description, imageString: "stethoscope")
+                            .frame(height: 100)
+                            .padding(.leading)
+                    }
+                    .padding(.horizontal, 2)
+                    
+                    HStack{
+                        // Usage
+                        Spacer()
+                        VStack{
+                            Section("Usage"){
+                                viewInView(arrayData: medicine.uses)
+                                    .frame(width: 165, height: 100)
+                                    .padding(.leading)
+                            }
+                        }
+                        .background(
+                            RoundedRectangle(cornerRadius: 25)
+                                .foregroundStyle(.thinMaterial)
+                                .shadow(radius: 5)
+                        )
+                        
+                        Spacer()
+                        
+                        VStack{
+                            Section("Precautions"){
+                                viewInView(arrayData: medicine.precautions)
+                                    .frame(width: 165, height: 100)
+                                    .padding(.leading)
+                            }
+                        }
+                        .background(
+                            RoundedRectangle(cornerRadius: 25)
+                                .foregroundStyle(.thinMaterial)
+                                .shadow(radius: 5)
+                        )
+                        
+                        /*Spacer*/                    Spacer()
+                        
+                        // Precautions
+                        VStack{
+                            Section("Interaction"){
+                                viewInView(arrayData: medicine.interactions)
+                                    .frame(width: 165, height: 100)
+                                    .padding(.leading)
+                            }
+                        }
+                        .background(
+                            RoundedRectangle(cornerRadius: 25)
+                                .foregroundStyle(.thinMaterial)
+                                .shadow(radius: 5)
+                        )
+                        Spacer()
+                    }
+                    .padding(2)
                 }
-                .background(.white)
-                .cornerRadius(35)
-                .offset(x: 0, y:-35)
+                
+                // Way To Use
+                ZStack(alignment: .topLeading){
+                    ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
+                    StringView(title: "How To Use", summary: medicine.howToUse, imageString: "checkmark.seal.fill")
+                        .frame(height: 100)
+                        .padding(.leading)
+                }
+                .padding(2)
+                
+                Spacer()
+                
+                // Side Effect
+                ZStack(alignment: .topLeading){
+                    ExtractView(width: 0.0, height: 130, cornerRadius: 25.0)
+                    sideEffect(sideEffectData: medicine.sideEffects)
+                        .frame(height: 130)
+                        .padding(.leading)
+                }
+                .padding(2)
                 
                 ZStack(alignment: .leading){
                     ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
-                    StringView(title: "Description", summary: medicine.description, imageString: "stethoscope")
+                    StringView(title: "Storage Instruction", summary: medicine.storageInstructions, imageString: "shippingbox.fill")
                         .frame(height: 100)
                         .padding(.leading)
                 }
                 .padding(.horizontal, 2)
                 
-                HStack{
-                    // Usage
-                    Spacer()
-                    VStack{
-                        Section("Usage"){
-                            viewInView(arrayData: medicine.uses)
-                                .frame(width: 165, height: 100)
-                                .padding(.leading)
-                        }
-                    }
-                    .background(
-                        RoundedRectangle(cornerRadius: 25)
-                            .foregroundStyle(.thinMaterial)
-                            .shadow(radius: 5)
-                    )
-                    
-                    Spacer()
-                    
-                    VStack{
-                        Section("Precautions"){
-                            viewInView(arrayData: medicine.precautions)
-                                .frame(width: 165, height: 100)
-                                .padding(.leading)
-                        }
-                    }
-                    .background(
-                        RoundedRectangle(cornerRadius: 25)
-                            .foregroundStyle(.thinMaterial)
-                            .shadow(radius: 5)
-                    )
-                    
-                    /*Spacer*/                    Spacer()
-                    
-                    // Precautions
-                    VStack{
-                        Section("Interaction"){
-                            viewInView(arrayData: medicine.interactions)
-                                .frame(width: 165, height: 100)
-                                .padding(.leading)
-                        }
-                    }
-                    .background(
-                        RoundedRectangle(cornerRadius: 25)
-                            .foregroundStyle(.thinMaterial)
-                            .shadow(radius: 5)
-                    )
-                    Spacer()
+                ZStack(alignment: .leading){
+                    ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
+                    StringView(title: "Warning", summary: medicine.warnings, imageString: "exclamationmark.triangle.fill")
+                        .frame(height: 100)
+                        .padding(.leading)
                 }
-                .padding(2)
+                .padding(.horizontal, 2)
             }
-            
-            // Way To Use
-            ZStack(alignment: .topLeading){
-                ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
-                StringView(title: "How To Use", summary: medicine.howToUse, imageString: "checkmark.seal.fill")
-                    .frame(height: 100)
-                    .padding(.leading)
-            }
-            .padding(2)
-            
-            Spacer()
-            
-            // Side Effect
-            ZStack(alignment: .topLeading){
-                ExtractView(width: 0.0, height: 130, cornerRadius: 25.0)
-                sideEffect(sideEffectData: medicine.sideEffects)
-                    .frame(height: 130)
-                    .padding(.leading)
-            }
-            .padding(2)
-            
-            ZStack(alignment: .leading){
-                ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
-                StringView(title: "Storage Instruction", summary: medicine.storageInstructions, imageString: "shippingbox.fill")
-                    .frame(height: 100)
-                    .padding(.leading)
-            }
-            .padding(.horizontal, 2)
-            
-            ZStack(alignment: .leading){
-                ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
-                StringView(title: "Warning", summary: medicine.warnings, imageString: "exclamationmark.triangle.fill")
-                    .frame(height: 100)
-                    .padding(.leading)
-            }
-            .padding(.horizontal, 2)
+            .scaleEffect(1)
+            .frame(width: 600)
+            .cornerRadius(25.0)
         }
-        .ignoresSafeArea()
-//        .toolbar(.hidden, for: .tabBar)
     }
 }
 
