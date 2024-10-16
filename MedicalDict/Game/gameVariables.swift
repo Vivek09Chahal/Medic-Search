@@ -7,16 +7,16 @@
 
 import Foundation
 
-struct game: Codable, Hashable, Identifiable{
+struct game: Codable, Hashable, Identifiable {
     var id: UUID = UUID()
-    var text: String
+    var question: String
     var answer: [String]
     var correctAnswer: String
     
-    enum CodingKeys: String, CodingKey {
-        case text
+    
+    enum CodingKeys1: String, CodingKey {
+        case question
         case answer
         case correctAnswer
     }
 }
-

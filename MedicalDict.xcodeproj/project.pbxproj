@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0C2492C62C95D100008B9FC9 /* TipBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2492C52C95D100008B9FC9 /* TipBarView.swift */; };
 		0C5EC55F2C86EDA000865908 /* sideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5EC55E2C86EDA000865908 /* sideEffect.swift */; };
-		0C9885572CB96B9C0017599C /* gameViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9885562CB96B9C0017599C /* gameViewTest.swift */; };
 		0C98855A2CB96DE00017599C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9885592CB96DE00017599C /* ContentView.swift */; };
 		0C9D5D2B2C6A42870037E1B0 /* MedicalDictApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */; };
 		0C9D5D2F2C6A42880037E1B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */; };
@@ -20,10 +19,10 @@
 		E2AFA70E2CB7DA650033C695 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFA70D2CB7DA650033C695 /* GameView.swift */; };
 		E2BCA0D32C77470700D58470 /* medicineData.json in Resources */ = {isa = PBXBuildFile; fileRef = E2BCA0D22C77470700D58470 /* medicineData.json */; };
 		E2BCA0D52C77478F00D58470 /* Medicin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D42C77478F00D58470 /* Medicin.swift */; };
-		E2BCA0D72C7749AF00D58470 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D62C7749AF00D58470 /* ModelData.swift */; };
+		E2BCA0D72C7749AF00D58470 /* medicineJsonLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D62C7749AF00D58470 /* medicineJsonLoad.swift */; };
 		E2BCA0D92C774B3800D58470 /* DescriptionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D82C774B3800D58470 /* DescriptionPage.swift */; };
 		E2F6D8372CB7DB8A0013BF6E /* StringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D8362CB7DB8A0013BF6E /* StringView.swift */; };
-		E2F6D8392CB7E0E40013BF6E /* quizQuetions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D8382CB7E0E40013BF6E /* quizQuetions.swift */; };
+		E2F6D8392CB7E0E40013BF6E /* gameJsonLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D8382CB7E0E40013BF6E /* gameJsonLoad.swift */; };
 		E2F6D83E2CB7E5A50013BF6E /* gameData.json in Resources */ = {isa = PBXBuildFile; fileRef = E2F6D83D2CB7E5A50013BF6E /* gameData.json */; };
 		E2F6D8402CB7E5E00013BF6E /* gameVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D83F2CB7E5E00013BF6E /* gameVariables.swift */; };
 /* End PBXBuildFile section */
@@ -33,7 +32,6 @@
 		0C2444412C9BF8FE00837D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0C2492C52C95D100008B9FC9 /* TipBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipBarView.swift; sourceTree = "<group>"; };
 		0C5EC55E2C86EDA000865908 /* sideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideEffect.swift; sourceTree = "<group>"; };
-		0C9885562CB96B9C0017599C /* gameViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewTest.swift; sourceTree = "<group>"; };
 		0C9885592CB96DE00017599C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0C9D5D272C6A42870037E1B0 /* MedicalDict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalDict.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDictApp.swift; sourceTree = "<group>"; };
@@ -45,10 +43,10 @@
 		E2AFA70D2CB7DA650033C695 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		E2BCA0D22C77470700D58470 /* medicineData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = medicineData.json; sourceTree = "<group>"; };
 		E2BCA0D42C77478F00D58470 /* Medicin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicin.swift; sourceTree = "<group>"; };
-		E2BCA0D62C7749AF00D58470 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		E2BCA0D62C7749AF00D58470 /* medicineJsonLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineJsonLoad.swift; sourceTree = "<group>"; };
 		E2BCA0D82C774B3800D58470 /* DescriptionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionPage.swift; sourceTree = "<group>"; };
 		E2F6D8362CB7DB8A0013BF6E /* StringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringView.swift; sourceTree = "<group>"; };
-		E2F6D8382CB7E0E40013BF6E /* quizQuetions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizQuetions.swift; sourceTree = "<group>"; };
+		E2F6D8382CB7E0E40013BF6E /* gameJsonLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameJsonLoad.swift; sourceTree = "<group>"; };
 		E2F6D83D2CB7E5A50013BF6E /* gameData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gameData.json; sourceTree = "<group>"; };
 		E2F6D83F2CB7E5E00013BF6E /* gameVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameVariables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,20 +62,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C9885552CB96B860017599C /* TestFile */ = {
-			isa = PBXGroup;
-			children = (
-				0C9885562CB96B9C0017599C /* gameViewTest.swift */,
-			);
-			path = TestFile;
-			sourceTree = "<group>";
-		};
 		0C9885582CB96D850017599C /* Game */ = {
 			isa = PBXGroup;
 			children = (
 				E2AFA70D2CB7DA650033C695 /* GameView.swift */,
 				E2F6D83F2CB7E5E00013BF6E /* gameVariables.swift */,
-				E2F6D8382CB7E0E40013BF6E /* quizQuetions.swift */,
+				E2F6D8382CB7E0E40013BF6E /* gameJsonLoad.swift */,
 				E2F6D83D2CB7E5A50013BF6E /* gameData.json */,
 			);
 			path = Game;
@@ -119,7 +109,6 @@
 				0C98855B2CB96E810017599C /* TipFiles */,
 				E27F46B62C74A0D3008C08E4 /* ListsData */,
 				0C9885582CB96D850017599C /* Game */,
-				0C9885552CB96B860017599C /* TestFile */,
 				0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */,
 				0C9D5D302C6A42880037E1B0 /* Preview Content */,
 			);
@@ -157,7 +146,7 @@
 		E27F46B62C74A0D3008C08E4 /* ListsData */ = {
 			isa = PBXGroup;
 			children = (
-				E2BCA0D62C7749AF00D58470 /* ModelData.swift */,
+				E2BCA0D62C7749AF00D58470 /* medicineJsonLoad.swift */,
 				E2BCA0D42C77478F00D58470 /* Medicin.swift */,
 				E2BCA0D22C77470700D58470 /* medicineData.json */,
 			);
@@ -242,12 +231,11 @@
 				E212A73C2C7DD95700B0B667 /* viewInView.swift in Sources */,
 				0C2492C62C95D100008B9FC9 /* TipBarView.swift in Sources */,
 				0CE8C5812C8CE5A900C91E09 /* Dailytips.swift in Sources */,
-				E2BCA0D72C7749AF00D58470 /* ModelData.swift in Sources */,
+				E2BCA0D72C7749AF00D58470 /* medicineJsonLoad.swift in Sources */,
 				E2F6D8372CB7DB8A0013BF6E /* StringView.swift in Sources */,
 				E2BCA0D52C77478F00D58470 /* Medicin.swift in Sources */,
 				E2AFA70E2CB7DA650033C695 /* GameView.swift in Sources */,
-				E2F6D8392CB7E0E40013BF6E /* quizQuetions.swift in Sources */,
-				0C9885572CB96B9C0017599C /* gameViewTest.swift in Sources */,
+				E2F6D8392CB7E0E40013BF6E /* gameJsonLoad.swift in Sources */,
 				E298217F2CB0002700CD61EB /* sideBarView.swift in Sources */,
 				0C98855A2CB96DE00017599C /* ContentView.swift in Sources */,
 				E2BCA0D92C774B3800D58470 /* DescriptionPage.swift in Sources */,
