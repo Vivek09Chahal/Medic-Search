@@ -13,28 +13,25 @@
 //
 
 import Foundation
+import SwiftUI
 
-func loadGameJsonData(at index: Int) -> game? {
-    guard let url = Bundle.main.url(forResource: "gameData", withExtension: "json") else {
-        print("Failed to locate gameData.json in bundle.")
-        return nil
+func loadGameJSONData() -> [game] {
+    guard let url = Bundle.main.url(forResource: "gameData", withExtension: "json")
+    else {
+        fatalError("Failed to locate gameData.json in bundle.")
     }
     
-    guard let data = try? Data(contentsOf: url) else {
-        print("Failed to load gameData.json from bundle.")
-        return nil
+    guard let data = try? Data(contentsOf: url)
+    else {
+        fatalError("Failed to load gameData.json from bundle.")
     }
     
     let decoder = JSONDecoder()
-    guard let gameData = try? decoder.decode([game].self, from: data) else {
-        print("Failed to decode gameData.json from bundle.")
-        return nil
+    guard let question = try? decoder.decode([game].self, from: data)
+    else {
+        fatalError("Failed to decode gameData.json from bundle.")
     }
     
-    guard index < gameData.count else {
-        print("Index out of bounds.")
-        return nil
-    }
-    
-    return gameData[index]
+    return question
 }
+

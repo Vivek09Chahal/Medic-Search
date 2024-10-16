@@ -14,8 +14,6 @@ struct TipBarView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color.red, Color.green]), startPoint: .leading, endPoint: .trailing)
-                .ignoresSafeArea()
             ScrollView {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
                     ForEach(0 ..< length, id: \.self) { index in
@@ -52,6 +50,7 @@ struct TipBarView: View {
                 }
             }
         }
+        .background(Color.black)
     }
 }
 

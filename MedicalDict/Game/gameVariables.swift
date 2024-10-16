@@ -14,7 +14,7 @@ struct game: Codable, Hashable, Identifiable {
     var correctAnswer: String
     
     
-    enum CodingKeys1: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case question
         case answer
         case correctAnswer

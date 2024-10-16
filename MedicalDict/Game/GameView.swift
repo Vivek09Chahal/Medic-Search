@@ -9,12 +9,13 @@ import SwiftUI
 
 struct GameView: View{
     
-//    @State var question: game = loadGameJsonData()
+    @State var question: [game] = loadGameJSONData()
     
     var body : some View{
         HStack{
-//            ForEach()
-            Text("Hellow world")
+            ForEach(question, id: \.self){ questions in
+                Text("\(questions)")
+            }
         }
     }
 }
