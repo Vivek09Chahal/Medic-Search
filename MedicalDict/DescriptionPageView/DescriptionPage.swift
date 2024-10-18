@@ -47,58 +47,43 @@ struct DescriptionPage: View {
                     }
                     .padding(.horizontal, 2)
                     
-                    HStack{
-                        // Usage
-                        Spacer()
-                        VStack{
-                            Section("Usage"){
-                                viewInView(arrayData: medicine.uses)
-                                    .frame(width: 165, height: 100)
-                                    .padding(.leading)
+                    ZStack{
+                        ExtractView(width: 0.0, height: 150, cornerRadius: 25.0)
+                        HStack{
+                            //                      Usage
+                            VStack{
+                                Section("Usage"){
+                                    viewInView(arrayData: medicine.uses)
+                                        .frame(width: 165, height: 100)
+                                    //                                    .padding(.leading)
+                                }
+                            }
+                            Capsule().fill(Color.secondary).frame(width: 2.0)
+                            
+                            //                      Precautions
+                            VStack{
+                                Section("Precautions"){
+                                    viewInView(arrayData: medicine.precautions)
+                                        .frame(width: 165, height: 100)
+                                    //                                    .padding(.leading)
+                                }
+                            }
+                            Capsule().fill(Color.secondary).frame(width: 2.0)
+                            
+                            //                      Interactions
+                            VStack{
+                                Section("Interaction"){
+                                    viewInView(arrayData: medicine.interactions)
+                                        .frame(width: 165, height: 100)
+                                    //                                    .padding(.leading)
+                                }
                             }
                         }
-                        .background(
-                            RoundedRectangle(cornerRadius: 25)
-                                .foregroundStyle(.thinMaterial)
-                                .shadow(radius: 5)
-                        )
-                        
-                        Spacer()
-                        
-                        VStack{
-                            Section("Precautions"){
-                                viewInView(arrayData: medicine.precautions)
-                                    .frame(width: 165, height: 100)
-                                    .padding(.leading)
-                            }
-                        }
-                        .background(
-                            RoundedRectangle(cornerRadius: 25)
-                                .foregroundStyle(.thinMaterial)
-                                .shadow(radius: 5)
-                        )
-                        
-                        /*Spacer*/                    Spacer()
-                        
-                        // Precautions
-                        VStack{
-                            Section("Interaction"){
-                                viewInView(arrayData: medicine.interactions)
-                                    .frame(width: 165, height: 100)
-                                    .padding(.leading)
-                            }
-                        }
-                        .background(
-                            RoundedRectangle(cornerRadius: 25)
-                                .foregroundStyle(.thinMaterial)
-                                .shadow(radius: 5)
-                        )
-                        Spacer()
                     }
-                    .padding(2)
                 }
                 
-                // Way To Use
+                
+                // How To Use
                 ZStack(alignment: .topLeading){
                     ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
                     StringView(title: "How To Use", summary: medicine.howToUse, imageString: "checkmark.seal.fill")
@@ -109,7 +94,7 @@ struct DescriptionPage: View {
                 
                 Spacer()
                 
-                // Side Effect
+//              Side Effect
                 ZStack(alignment: .topLeading){
                     ExtractView(width: 0.0, height: 130, cornerRadius: 25.0)
                     sideEffect(sideEffectData: medicine.sideEffects)
@@ -118,6 +103,7 @@ struct DescriptionPage: View {
                 }
                 .padding(2)
                 
+//              Storage instructions
                 ZStack(alignment: .leading){
                     ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
                     StringView(title: "Storage Instruction", summary: medicine.storageInstructions, imageString: "shippingbox.fill")
@@ -126,6 +112,7 @@ struct DescriptionPage: View {
                 }
                 .padding(.horizontal, 2)
                 
+//              Warning
                 ZStack(alignment: .leading){
                     ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
                     StringView(title: "Warning", summary: medicine.warnings, imageString: "exclamationmark.triangle.fill")

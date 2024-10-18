@@ -24,6 +24,8 @@ struct mainView: View {
                     }
                 }
             }
+            .navigationTitle("Medicine List")
+            .navigationBarTitleDisplayMode(.inline)
             .navigationSplitViewColumnWidth(250)
             // Detail view
         } detail: {
