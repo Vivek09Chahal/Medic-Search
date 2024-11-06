@@ -22,7 +22,7 @@ struct sideEffect: View {
                 .padding(3)
                 ForEach(sideEffectData, id: \.self) {
                     name in Text("・\(name)")
-                        .font(.subheadline)
+                        .font(.title3)
                 }
             }
             .padding(3)

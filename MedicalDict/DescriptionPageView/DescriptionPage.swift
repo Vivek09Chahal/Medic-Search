@@ -96,9 +96,9 @@ struct DescriptionPage: View {
                 
 //              Side Effect
                 ZStack(alignment: .topLeading){
-                    ExtractView(width: 0.0, height: 130, cornerRadius: 25.0)
+                    ExtractView(width: 0.0, height: 150, cornerRadius: 25.0)
                     sideEffect(sideEffectData: medicine.sideEffects)
-                        .frame(height: 130)
+                        .frame(height: 150)
                         .padding(.leading)
                 }
                 .padding(2)

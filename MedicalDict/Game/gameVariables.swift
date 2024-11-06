@@ -13,10 +13,9 @@ struct Game: Decodable, Hashable, Identifiable {
     var answer: [String]
     var correctAnswer: String
     
-    
-    enum CodingKeys1: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case question
-        case answer
+        case answer = "answers" // Match the JSON key
         case correctAnswer
     }
 }

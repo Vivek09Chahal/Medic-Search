@@ -33,13 +33,21 @@ struct mainView: View {
                 DescriptionPage(medicine: selectedMedicine)
                     .id(selectedMedicine.medicineName) // Force the detail view to refresh on each selection // Pass the selected medicine to the detail view
             } else {
-                Text("To ensure good health:")
-                Text("Eat lightly, breathe deeply, live moderately, cultivate cheerfulness")
-                Text("And maintain an interest in life.")
-                Text("To know about any medicine, Search in Sidebar")
+                ZStack{
+                    Image("descriptionImage")
+                        .resizable()
+                        .scaledToFill()
+                    VStack{
+                        Text("To ensure good health:")
+                        Text("Eat lightly, breathe deeply, live moderately, cultivate cheerfulness")
+                        Text("And maintain an interest in life.")
+                        Text("To know about any medicine, Search in Sidebar")
+                    }
+                }
+                .ignoresSafeArea()
             }
         }
-        .searchable(text: $searchText, isPresented: $searchIsActive, prompt: "Search Here")
+        .searchable(text: $searchText, isPresented: $searchIsActive, prompt: "Search")
     }
     
     // Filtered medicines based on search text

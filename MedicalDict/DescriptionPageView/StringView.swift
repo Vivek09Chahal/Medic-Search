@@ -25,6 +25,7 @@ struct StringView: View {
                 .padding(3)
                 Divider()
                 Text(summary)
+                    .font(.title3)
             }
         }
     }

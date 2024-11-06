@@ -1,16 +1,12 @@
-//
-//  TipBarView.swift
-//  MedicalDict
-//
-//  Created by Vivek Chahal on 14/09/24.
-//
-
 import SwiftUI
 
 struct TipBarView: View {
     
     @State private var length = DailyTips.tips.count
-    @State private var flippedIndex: Int? = nil
+    @State private var selectedIndex: Int? = nil
+    @State private var isTapViewVisible: Bool = false
+    
+    private let columns = [GridItem(.fixed(400)), GridItem(.fixed(400))]
     
     var body: some View {
         ZStack {
@@ -18,19 +14,32 @@ struct TipBarView: View {
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
-            ScrollView {
-                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
-                    ForEach(0 ..< length, id: \.self) { index in
-                        Image("img\(index + 1)")
-                            .resizable()
-                            .clipShape(RoundedRectangle(cornerRadius: 25.0))
-                            .frame(width: 300, height: 200)
-                            .padding()
+            
+            ScrollView(showsIndicators: false) {
+                Text("Tips To Keep Yourself Healthy")
+                    .font(.title)
+                    .fontDesign(.monospaced)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(15)
+                
+                LazyVGrid(columns: columns) {
+                    ForEach(0..<length, id: \.self) { index in
+                        TipImageButton(
+                            index: index,
+                            selectedIndex: $selectedIndex,
+                            isTapViewVisible: $isTapViewVisible
+                        )
                     }
                 }
             }
-            .scaleEffect(1)
-            .frame(width: 800)
+            .blur(radius: isTapViewVisible ? 10 : 0) // Apply blur based on visibility
+            
+            if let selectedIndex = selectedIndex, isTapViewVisible {
+                tapView(tips: DailyTips.tips[selectedIndex], isVisible: $isTapViewVisible)
+            }
         }
     }
 }

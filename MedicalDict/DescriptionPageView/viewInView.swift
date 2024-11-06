@@ -16,7 +16,7 @@ struct viewInView: View {
             VStack(alignment: .leading){
                 ForEach(arrayData, id: \.self) {
                     name in Text("•\(name)")
-                        .font(.subheadline)
+                        .font(.title3)
                 }
             }
         }
