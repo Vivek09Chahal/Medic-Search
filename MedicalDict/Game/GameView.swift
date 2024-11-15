@@ -16,100 +16,146 @@ struct GameView: View {
     @State private var timeRemaining: Double = 10 // 10 seconds per question
     @State private var timer: Timer?
     @State private var optionColors: [Color] = [.red, .orange, .yellow, .teal]
+    //    var meshColor = MeshGradient
     
     var body: some View {
         GeometryReader { geometry in
-            VStack(spacing: 20) {
+            ZStack {
                 
-                // Progress, Score, and Timer
-                HStack {
-                    Text("Question \(currentQuestionIndex + 1) of \(questions.count)")
-                        .font(.headline)
-                    Spacer()
-                    
-                    Text("Time: \(Int(timeRemaining)) seconds")
-                        .font(.headline)
-                    
-                    Spacer()
-                    Text("Score: \(score)")
-                        .font(.headline)
-                }
-                .padding()
-                .background(Color(.systemBackground))
-                .cornerRadius(30)
-                .shadow(radius: 5)
-                .padding()
+                Image("doodle")
+                    .resizable()
+                    .scaledToFill()
+                    .opacity(0.8)
+                    .ignoresSafeArea()
                 
-                // Time Bar
-                ZStack(alignment: .leading) {
-                    Rectangle()
-                        .fill(Color.gray.opacity(0.3))
-                        .frame(height: 8)
-                    
-                    Rectangle()
-                        .fill(timeRemaining > 7 ? Color.green : (timeRemaining > 3 ? Color.orange : Color.red))
-                        .frame(width: max(0, CGFloat(timeRemaining / 10) * geometry.size.width), height: 8)
-                        .animation(.linear, value: timeRemaining)
-                }
-                .cornerRadius(4)
-                .padding(.horizontal)
-                
-                // Question Card
-                VStack(alignment: .leading, spacing: 20) {
-                    Text(questions[currentQuestionIndex].question)
-                        .font(.title)
-                        .padding()
-                        .frame(maxWidth: .infinity, alignment: .center)
-                    
-                    // Answer Options
-                    ForEach(Array(questions[currentQuestionIndex].answer.enumerated()), id: \.element) { index, answer in
-                        Button(action: {
-                            selectAnswer(answer)
-                        }) {
-                            Text(answer)
-                                .font(.title3)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(selectedAnswer == nil ? optionColors[index % optionColors.count] : backgroundColor(for: answer))
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
-                        }
-                        .disabled(selectedAnswer != nil)
+                VStack(spacing: 20) {
+                    // Status Bar
+                    HStack(spacing: 20) {
+                        // Progress Capsule
+                        Capsule()
+                            .fill(.ultraThinMaterial)
+                            .frame(width: 120, height: 40)
+                            .overlay(
+                                Text("\(currentQuestionIndex + 1)/\(questions.count)")
+                                    .fontWeight(.bold)
+                            )
+                        
+                        // Timer Capsule
+                        Capsule()
+                            .fill(.ultraThinMaterial)
+                            .frame(width: 100, height: 40)
+                            .overlay(
+                                Text("\(Int(timeRemaining))s")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(timeRemaining > 3 ? .primary : .red)
+                            )
+                        
+                        // Score Capsule
+                        Capsule()
+                            .fill(.ultraThinMaterial)
+                            .frame(width: 100, height: 40)
+                            .overlay(
+                                Text("Score: \(score)")
+                                    .fontWeight(.bold)
+                            )
                     }
-                }
-                .padding()
-                .background(Color(.systemBackground))
-                .cornerRadius(30)
-                .shadow(radius: 10)
-                .padding()
-                
-                // Next Question Button
-                if selectedAnswer != nil {
-                    Button("Next Question") {
-                        nextQuestion()
-                    }
-                    .font(.title2)
                     .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+                    
+                    // Timer Bar
+                    ZStack(alignment: .leading) {
+                        Capsule()
+                            .fill(.ultraThinMaterial)
+                            .frame(height: 8)
+                        
+                        Capsule()
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        timeRemaining > 7 ? .green : (timeRemaining > 3 ? .orange : .red),
+                                        timeRemaining > 7 ? .green.opacity(0.7) : (timeRemaining > 3 ? .orange.opacity(0.7) : .red.opacity(0.7))
+                                    ],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                            .frame(width: max(0, CGFloat(timeRemaining / 10) * geometry.size.width - 40), height: 8)
+                            .animation(.linear, value: timeRemaining)
+                    }
+                    .padding(.horizontal)
+                    
+                    // Question Card
+                    VStack(alignment: .leading, spacing: 20) {
+                        Text(questions[currentQuestionIndex].question)
+                            .font(.title2.bold())
+                            .padding()
+                            .frame(maxWidth: .infinity,alignment: .center)
+                            .multilineTextAlignment(.center)
+                        
+                        // Answer Options
+                        ForEach(Array(questions[currentQuestionIndex].answer.enumerated()), id: \.element) { index, answer in
+                            Button(action: {
+                                withAnimation(.spring()) {
+                                    selectAnswer(answer)
+                                }
+                            }) {
+                                Text(answer)
+                                    .font(.title3)
+                                    .padding()
+                                    .frame(maxWidth: .infinity)
+                                    .background(
+                                        ZStack {
+                                            if selectedAnswer == nil {
+                                                LinearGradient(colors: [optionColors[index % optionColors.count],
+                                                                        optionColors[index % optionColors.count].opacity(0.7)],
+                                                               startPoint: .topLeading,
+                                                               endPoint: .bottomTrailing)
+                                            } else {
+                                                backgroundColor(for: answer)
+                                            }
+                                        }
+                                    )
+                                    .foregroundColor(.white)
+                                    .cornerRadius(15)
+                                    .shadow(radius: 5)
+                            }
+                            .disabled(selectedAnswer != nil)
+                        }
+                    }
+                    .padding()
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(30)
+                    .shadow(radius: 10)
+                    .padding()
+                    
+                    // Next Question Button
+                    if selectedAnswer != nil {
+                        Button(action: nextQuestion) {
+                            Text("Next Question")
+                                .font(.title3.bold())
+                                .padding(.horizontal, 30)
+                                .padding(.vertical, 15)
+                                .background(
+                                    LinearGradient(colors: [.blue, .blue.opacity(0.8)],
+                                                   startPoint: .topLeading,
+                                                   endPoint: .bottomTrailing)
+                                )
+                                .foregroundColor(.white)
+                                .cornerRadius(25)
+                                .shadow(radius: 5)
+                        }
+                        .transition(.scale.combined(with: .opacity))
+                    }
                 }
-            }
-            .frame(maxWidth: min(geometry.size.width, 800))
-            .padding()
-            .center(in: geometry)
-            .alert("Game Complete!", isPresented: $showScore) {
-                Button("Play Again", action: resetGame)
-            } message: {
-                Text("Your final score is \(score) out of \(questions.count)")
+                .frame(maxWidth: min(geometry.size.width, 800))
+                .padding()
+                .center(in: geometry)
             }
         }
-        .background(
-            Image("doodle")
-            .resizable()
-            .scaledToFill()
-            .edgesIgnoringSafeArea(.all)
-        )
+        .alert("Game Complete!", isPresented: $showScore) {
+            Button("Play Again", action: resetGame)
+        } message: {
+            Text("Your final score is \(score) out of \(questions.count)")
+        }
         .onAppear(perform: startTimer)
         .onDisappear(perform: stopTimer)
     }
@@ -157,12 +203,29 @@ struct GameView: View {
         startTimer()
     }
     
-    private func backgroundColor(for answer: String) -> Color {
-        guard let selectedAnswer = selectedAnswer else { return Color.blue }
-        if selectedAnswer == answer {
-            return answer == questions[currentQuestionIndex].correctAnswer ? Color.green : Color.red
+    private func backgroundColor(for answer: String) -> LinearGradient {
+        guard let selectedAnswer = selectedAnswer else {
+            return LinearGradient(colors: [.blue, .blue.opacity(0.8)],
+                                  startPoint: .topLeading,
+                                  endPoint: .bottomTrailing)
         }
-        return answer == questions[currentQuestionIndex].correctAnswer ? Color.green : Color.red
+        
+        if selectedAnswer == answer {
+            return answer == questions[currentQuestionIndex].correctAnswer ?
+            LinearGradient(colors: [.green, .green.opacity(0.8)],
+                           startPoint: .topLeading,
+                           endPoint: .bottomTrailing) :
+            LinearGradient(colors: [.red, .red.opacity(0.8)],
+                           startPoint: .topLeading,
+                           endPoint: .bottomTrailing)
+        }
+        return answer == questions[currentQuestionIndex].correctAnswer ?
+        LinearGradient(colors: [.green, .green.opacity(0.8)],
+                       startPoint: .topLeading,
+                       endPoint: .bottomTrailing) :
+        LinearGradient(colors: [.gray, .gray.opacity(0.8)],
+                       startPoint: .topLeading,
+                       endPoint: .bottomTrailing)
     }
 }
 
