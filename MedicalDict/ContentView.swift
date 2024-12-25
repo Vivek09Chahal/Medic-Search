@@ -15,10 +15,6 @@ struct ContentView: View {
                 GameView()
             }
             
-            Tab("", systemImage: "figure.outdoor.soccer"){
-                TipBarView()
-            }
-            
             Tab("", systemImage: "magnifyingglass.circle") {
                 mainView()
             }
