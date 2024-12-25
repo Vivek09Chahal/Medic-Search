@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C2492C62C95D100008B9FC9 /* TipBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2492C52C95D100008B9FC9 /* TipBarView.swift */; };
 		0C2786D92CDCAF2900009870 /* popUpAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2786D82CDCAF2900009870 /* popUpAnimation.swift */; };
 		0C5EC55F2C86EDA000865908 /* sideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5EC55E2C86EDA000865908 /* sideEffect.swift */; };
 		0C98855A2CB96DE00017599C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9885592CB96DE00017599C /* ContentView.swift */; };
 		0C9D5D2B2C6A42870037E1B0 /* MedicalDictApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */; };
 		0C9D5D2F2C6A42880037E1B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */; };
 		0C9D5D322C6A42880037E1B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9D5D312C6A42880037E1B0 /* Preview Assets.xcassets */; };
-		0C9FE7AB2CE70BDF005DEA5D /* TipCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FE7AA2CE70BDF005DEA5D /* TipCard.swift */; };
-		0CBCFF0B2CD62A2500D2D99D /* TipImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBCFF0A2CD62A2500D2D99D /* TipImageButton.swift */; };
-		0CE8C5812C8CE5A900C91E09 /* Dailytips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE8C5802C8CE5A900C91E09 /* Dailytips.swift */; };
-		E212A73C2C7DD95700B0B667 /* viewInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212A73B2C7DD95700B0B667 /* viewInView.swift */; };
+		0CA3214C2D1BD868000B04B8 /* TipCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3214A2D1BD868000B04B8 /* TipCard.swift */; };
+		0CA3214D2D1BD868000B04B8 /* TipImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3214B2D1BD868000B04B8 /* TipImageButton.swift */; };
+		0CA3214E2D1BD868000B04B8 /* TipBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA321492D1BD868000B04B8 /* TipBarView.swift */; };
+		0CA3214F2D1BD868000B04B8 /* Dailytips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA321482D1BD868000B04B8 /* Dailytips.swift */; };
+		0CA321512D1BD9A0000B04B8 /* MedicnesForLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA321502D1BD9A0000B04B8 /* MedicnesForLetterView.swift */; };
+		0CA321532D1BDF52000B04B8 /* listView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA321522D1BDF52000B04B8 /* listView.swift */; };
 		E298217F2CB0002700CD61EB /* sideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298217E2CB0002700CD61EB /* sideBarView.swift */; };
 		E2AFA70E2CB7DA650033C695 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFA70D2CB7DA650033C695 /* GameView.swift */; };
 		E2BCA0D32C77470700D58470 /* medicineData.json in Resources */ = {isa = PBXBuildFile; fileRef = E2BCA0D22C77470700D58470 /* medicineData.json */; };
@@ -33,7 +34,6 @@
 /* Begin PBXFileReference section */
 		0C2444402C9BCB6200837D5A /* MedicalDict.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MedicalDict.entitlements; sourceTree = "<group>"; };
 		0C2444412C9BF8FE00837D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		0C2492C52C95D100008B9FC9 /* TipBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipBarView.swift; sourceTree = "<group>"; };
 		0C2786D82CDCAF2900009870 /* popUpAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpAnimation.swift; sourceTree = "<group>"; };
 		0C5EC55E2C86EDA000865908 /* sideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideEffect.swift; sourceTree = "<group>"; };
 		0C9885592CB96DE00017599C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,10 +41,12 @@
 		0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDictApp.swift; sourceTree = "<group>"; };
 		0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C9D5D312C6A42880037E1B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0C9FE7AA2CE70BDF005DEA5D /* TipCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCard.swift; sourceTree = "<group>"; };
-		0CBCFF0A2CD62A2500D2D99D /* TipImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipImageButton.swift; sourceTree = "<group>"; };
-		0CE8C5802C8CE5A900C91E09 /* Dailytips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dailytips.swift; sourceTree = "<group>"; };
-		E212A73B2C7DD95700B0B667 /* viewInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewInView.swift; sourceTree = "<group>"; };
+		0CA321482D1BD868000B04B8 /* Dailytips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dailytips.swift; sourceTree = "<group>"; };
+		0CA321492D1BD868000B04B8 /* TipBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipBarView.swift; sourceTree = "<group>"; };
+		0CA3214A2D1BD868000B04B8 /* TipCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCard.swift; sourceTree = "<group>"; };
+		0CA3214B2D1BD868000B04B8 /* TipImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipImageButton.swift; sourceTree = "<group>"; };
+		0CA321502D1BD9A0000B04B8 /* MedicnesForLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicnesForLetterView.swift; sourceTree = "<group>"; };
+		0CA321522D1BDF52000B04B8 /* listView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listView.swift; sourceTree = "<group>"; };
 		E298217E2CB0002700CD61EB /* sideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideBarView.swift; sourceTree = "<group>"; };
 		E2AFA70D2CB7DA650033C695 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		E2BCA0D22C77470700D58470 /* medicineData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = medicineData.json; sourceTree = "<group>"; };
@@ -80,17 +82,6 @@
 			path = Game;
 			sourceTree = "<group>";
 		};
-		0C98855B2CB96E810017599C /* TipFiles */ = {
-			isa = PBXGroup;
-			children = (
-				0C2492C52C95D100008B9FC9 /* TipBarView.swift */,
-				0CE8C5802C8CE5A900C91E09 /* Dailytips.swift */,
-				0CBCFF0A2CD62A2500D2D99D /* TipImageButton.swift */,
-				0C9FE7AA2CE70BDF005DEA5D /* TipCard.swift */,
-			);
-			path = TipFiles;
-			sourceTree = "<group>";
-		};
 		0C9D5D1E2C6A42870037E1B0 = {
 			isa = PBXGroup;
 			children = (
@@ -113,9 +104,10 @@
 				0C2444412C9BF8FE00837D5A /* Info.plist */,
 				0C2444402C9BCB6200837D5A /* MedicalDict.entitlements */,
 				0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */,
+				0C9885592CB96DE00017599C /* ContentView.swift */,
+				0CA321472D1BD832000B04B8 /* TipFiles */,
 				E212A73A2C7DD93D00B0B667 /* DescriptionPageView */,
 				E212A7382C7DD8CB00B0B667 /* UIVIew */,
-				0C98855B2CB96E810017599C /* TipFiles */,
 				E27F46B62C74A0D3008C08E4 /* ListsData */,
 				0C9885582CB96D850017599C /* Game */,
 				0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */,
@@ -132,11 +124,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0CA321472D1BD832000B04B8 /* TipFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0CA321482D1BD868000B04B8 /* Dailytips.swift */,
+				0CA321492D1BD868000B04B8 /* TipBarView.swift */,
+				0CA3214A2D1BD868000B04B8 /* TipCard.swift */,
+				0CA3214B2D1BD868000B04B8 /* TipImageButton.swift */,
+			);
+			path = TipFiles;
+			sourceTree = "<group>";
+		};
 		E212A7382C7DD8CB00B0B667 /* UIVIew */ = {
 			isa = PBXGroup;
 			children = (
 				E298217E2CB0002700CD61EB /* sideBarView.swift */,
-				0C9885592CB96DE00017599C /* ContentView.swift */,
+				0CA321502D1BD9A0000B04B8 /* MedicnesForLetterView.swift */,
 			);
 			path = UIVIew;
 			sourceTree = "<group>";
@@ -145,9 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				E2BCA0D82C774B3800D58470 /* DescriptionPage.swift */,
-				E212A73B2C7DD95700B0B667 /* viewInView.swift */,
 				0C5EC55E2C86EDA000865908 /* sideEffect.swift */,
 				E2F6D8362CB7DB8A0013BF6E /* StringView.swift */,
+				0CA321522D1BDF52000B04B8 /* listView.swift */,
 			);
 			path = DescriptionPageView;
 			sourceTree = "<group>";
@@ -234,19 +237,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CA321532D1BDF52000B04B8 /* listView.swift in Sources */,
 				E2F6D8402CB7E5E00013BF6E /* gameVariables.swift in Sources */,
 				0C5EC55F2C86EDA000865908 /* sideEffect.swift in Sources */,
 				0C9D5D2B2C6A42870037E1B0 /* MedicalDictApp.swift in Sources */,
-				E212A73C2C7DD95700B0B667 /* viewInView.swift in Sources */,
-				0C2492C62C95D100008B9FC9 /* TipBarView.swift in Sources */,
 				0C2786D92CDCAF2900009870 /* popUpAnimation.swift in Sources */,
-				0C9FE7AB2CE70BDF005DEA5D /* TipCard.swift in Sources */,
-				0CE8C5812C8CE5A900C91E09 /* Dailytips.swift in Sources */,
+				0CA3214C2D1BD868000B04B8 /* TipCard.swift in Sources */,
+				0CA3214D2D1BD868000B04B8 /* TipImageButton.swift in Sources */,
+				0CA3214E2D1BD868000B04B8 /* TipBarView.swift in Sources */,
+				0CA3214F2D1BD868000B04B8 /* Dailytips.swift in Sources */,
 				E2BCA0D72C7749AF00D58470 /* medicineJsonLoad.swift in Sources */,
 				E2F6D8372CB7DB8A0013BF6E /* StringView.swift in Sources */,
 				E2BCA0D52C77478F00D58470 /* Medicine.swift in Sources */,
+				0CA321512D1BD9A0000B04B8 /* MedicnesForLetterView.swift in Sources */,
 				E2AFA70E2CB7DA650033C695 /* GameView.swift in Sources */,
-				0CBCFF0B2CD62A2500D2D99D /* TipImageButton.swift in Sources */,
 				E2F6D8392CB7E0E40013BF6E /* gameJsonLoad.swift in Sources */,
 				E298217F2CB0002700CD61EB /* sideBarView.swift in Sources */,
 				0C98855A2CB96DE00017599C /* ContentView.swift in Sources */,

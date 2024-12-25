@@ -14,70 +14,49 @@ struct DescriptionPage: View {
     var body: some View {
         ZStack{
             
-            Image("descriptionImage")
+            Image("description")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
             
             ScrollView(showsIndicators: false){
                 VStack(alignment: .center){
-                    Image("img")
-                        .resizable()
-                        .frame(height: 300)
-                    
                     ZStack{
                         HStack{
                             Image(systemName: "pills.fill")
-                                .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                            
+                                .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.yellow, .orange]), startPoint: .topLeading, endPoint: .bottomTrailing))
                             Text("\(medicine.medicineName) ")
-                                .font(.title)
+                                .font(.system(size: 50))
                                 .foregroundStyle(.black)
                         }
                         .padding(7)
                     }
-                    .background(.white)
-                    .cornerRadius(35)
-                    .offset(x: 0, y:-35)
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(20)
+                    
                     
                     ZStack(alignment: .leading){
-                        ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
-                        StringView(title: "Description", summary: medicine.description, imageString: "stethoscope")
+                        ExtractView(width: 0.0, height: 150, cornerRadius: 25.0)
+                        stringView(title: "Description", summary: medicine.description, imageString: "stethoscope")
                             .frame(height: 100)
                             .padding(.leading)
                     }
                     .padding(.horizontal, 2)
                     
                     ZStack{
-                        ExtractView(width: 0.0, height: 150, cornerRadius: 25.0)
+                        ExtractView(width: 0.0, height: 200, cornerRadius: 25.0)
                         HStack{
-                            //                      Usage
-                            VStack{
-                                Section("Usage"){
-                                    viewInView(arrayData: medicine.uses)
-                                        .frame(width: 165, height: 100)
-                                    //                                    .padding(.leading)
-                                }
-                            }
-                            Capsule().fill(Color.secondary).frame(width: 2.0)
+                            listView(arrayData: medicine.uses, section:"Usage" ,icon:"cross.case")
+                                .frame(width: 165, height: 150)
+                            Capsule().fill(Color.secondary).frame(width: 1.0)
                             
-                            //                      Precautions
-                            VStack{
-                                Section("Precautions"){
-                                    viewInView(arrayData: medicine.precautions)
-                                        .frame(width: 165, height: 100)
-                                    //                                    .padding(.leading)
-                                }
-                            }
-                            Capsule().fill(Color.secondary).frame(width: 2.0)
+                            listView(arrayData: medicine.precautions, section:"Precautions", icon:"exclamationmark.shield")
+                                .frame(width: 165, height: 150)
+                            Capsule().fill(Color.secondary).frame(width: 1.0)
                             
-                            //                      Interactions
-                            VStack{
-                                Section("Interaction"){
-                                    viewInView(arrayData: medicine.interactions)
-                                        .frame(width: 165, height: 100)
-                                    //                                    .padding(.leading)
-                                }
-                            }
+                            listView(arrayData: medicine.interactions, section:"Interaction", icon:"pills.circle")
+                                .frame(width: 165, height: 150)
                         }
                     }
                 }
@@ -85,38 +64,37 @@ struct DescriptionPage: View {
                 
                 // How To Use
                 ZStack(alignment: .topLeading){
-                    ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
-                    StringView(title: "How To Use", summary: medicine.howToUse, imageString: "checkmark.seal.fill")
-                        .frame(height: 100)
-                        .padding(.leading)
-                }
-                .padding(2)
-                
-                Spacer()
-                
-//              Side Effect
-                ZStack(alignment: .topLeading){
                     ExtractView(width: 0.0, height: 150, cornerRadius: 25.0)
-                    sideEffect(sideEffectData: medicine.sideEffects)
+                    stringView(title: "How To Use", summary: medicine.howToUse, imageString: "checkmark.seal.fill")
                         .frame(height: 150)
                         .padding(.leading)
                 }
                 .padding(2)
                 
-//              Storage instructions
+                Spacer()
+                // side effect
+                ZStack(alignment: .topLeading){
+                    ExtractView(width: 0.0, height: 150, cornerRadius: 25.0)
+                    listView(arrayData: medicine.sideEffects, section: "Side effects", icon: "magnifyingglass")
+                        .frame(height: 150)
+                        .padding(.leading)
+                }
+                .padding(2)
+                
+                //              Storage instructions
                 ZStack(alignment: .leading){
-                    ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
-                    StringView(title: "Storage Instruction", summary: medicine.storageInstructions, imageString: "shippingbox.fill")
-                        .frame(height: 100)
+                    ExtractView(width: 0.0, height: 150, cornerRadius: 25.0)
+                    stringView(title: "Storage Instruction", summary: medicine.storageInstructions, imageString: "shippingbox.fill")
+                        .frame(height: 150)
                         .padding(.leading)
                 }
                 .padding(.horizontal, 2)
                 
-//              Warning
+                //              Warning
                 ZStack(alignment: .leading){
-                    ExtractView(width: 0.0, height: 100, cornerRadius: 25.0)
-                    StringView(title: "Warning", summary: medicine.warnings, imageString: "exclamationmark.triangle.fill")
-                        .frame(height: 100)
+                    ExtractView(width: 0.0, height: 150, cornerRadius: 25.0)
+                    stringView(title: "Warning", summary: medicine.warnings, imageString: "exclamationmark.triangle.fill")
+                        .frame(height: 150)
                         .padding(.leading)
                 }
                 .padding(.horizontal, 2)

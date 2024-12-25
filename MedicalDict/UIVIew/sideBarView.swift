@@ -8,66 +8,81 @@
 import SwiftUI
 
 struct mainView: View {
-    
     @State private var medicines: [Medicine] = loadMedicineJSONData()
     @State private var searchText: String = ""
     @State private var searchIsActive = false
-    @State var selectedMedicine: Medicine? // Selected medicine state
+    @State var selectedMedicine: Medicine?
+    
     
     var body: some View {
-        NavigationSplitView {
-            // Master view
-            NavigationStack {
-                List(filteredMedicines.sorted(by: { $0.medicineName < $1.medicineName }), id: \.self) { medicine in
-                    Button("\(medicine.medicineName)") {
-                        selectedMedicine = medicine // Assign the entire medicine object
+        NavigationStack {
+            ZStack {
+                LinearGradient(
+                    gradient: Gradient(colors: [.white, .blue.opacity(0.2)]),
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
+                ScrollView {
+                    VStack(spacing: 20) {
+                        // Search Bar
+                        HStack {
+                            HStack {
+                                Image(systemName: "magnifyingglass")
+                                    .foregroundColor(.gray)
+                                    .padding(.leading, 8)
+                                
+                                TextField("Search medicines...", text: $searchText)
+                                    .foregroundColor(.black)
+                                    .autocapitalization(.none)
+                                
+                                if !searchText.isEmpty {
+                                    Button(action: { searchText = "" }) {
+                                        Image(systemName: "xmark.circle.fill")
+                                            .foregroundColor(.gray)
+                                            .padding(.trailing, 8)
+                                    }
+                                }
+                            }
+                            .padding(.vertical, 10)
+                            .background(
+                                RoundedRectangle(cornerRadius: 16)
+                                    .fill(.white.opacity(0.95))
+                                    .shadow(color: .black.opacity(0.1), radius: 5)
+                            )
+                        }
+                        .padding(.horizontal)
+                        
+                        // Alphabet Grid
+                        LazyVGrid(columns: [
+                            GridItem(.adaptive(minimum: 40))
+                        ], spacing: 20) {
+                            ForEach(Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), id: \.self) { letter in
+                                NavigationLink(destination: MedicinesForLetterView(
+                                    letter: letter,
+                                    medicines: medicines.filter {
+                                        $0.medicineName.uppercased().hasPrefix(String(letter))
+                                    }
+                                )) {
+                                    Text(String(letter))
+                                        .font(.title)
+                                        .fontWeight(.bold)
+                                        .foregroundColor(.blue)
+                                }
+                            }
+                        }
                     }
                 }
             }
-            .navigationTitle("Medicine List")
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationSplitViewColumnWidth(250)
-            // Detail view
-        } detail: {
-            if let selectedMedicine = selectedMedicine {
-                DescriptionPage(medicine: selectedMedicine)
-                    .id(selectedMedicine.medicineName) // Force the detail view to refresh on each selection // Pass the selected medicine to the detail view
-            } else {
-                ZStack{
-                    Image("descriptionImage")
-                        .resizable()
-                        .scaledToFill()
-                    VStack{
-                        Text("To ensure good health:")
-                        Text("Eat lightly, breathe deeply, live moderately, cultivate cheerfulness")
-                        Text("And maintain an interest in life.")
-                        Text("To know about any medicine, Search in Sidebar")
-                    }
-                }
-                .ignoresSafeArea()
-            }
-        }
-        .searchable(text: $searchText, isPresented: $searchIsActive, prompt: "Search")
-    }
-    
-    // Filtered medicines based on search text
-    var filteredMedicines: [Medicine] {
-        if searchResults.isEmpty {
-            return medicines
-        } else {
-            return medicines.filter { medicine in
-                searchResults.contains(medicine.medicineName)
-            }
         }
     }
-    
-    // Search results based on search text
-    var searchResults: [String] {
-        if searchText.isEmpty {
-            return medicines.map { $0.medicineName }
-        } else {
-            return medicines.map { $0.medicineName }.filter { $0.lowercased().contains(searchText.lowercased()) }
-        }
+}
+
+
+struct ScaleButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.95 : 1)
+            .animation(.easeInOut, value: configuration.isPressed)
     }
 }
 
