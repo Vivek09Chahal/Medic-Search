@@ -31,6 +31,7 @@ struct mainView: View {
                 // Background Image
                 Image("description")
                     .resizable()
+                    .frame(width: .infinity, height: .infinity)
                     .ignoresSafeArea()
                 
                 // Search Bar

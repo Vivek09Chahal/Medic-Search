@@ -16,7 +16,7 @@ struct DescriptionPage: View {
             
             Image("description")
                 .resizable()
-                .scaledToFill()
+                .frame(width: .infinity, height: .infinity)
                 .ignoresSafeArea()
             
             ScrollView(showsIndicators: false){
@@ -37,9 +37,9 @@ struct DescriptionPage: View {
                     .background(.ultraThinMaterial)
                     .cornerRadius(20)
                     
-                    blockView(height: 100) {
+                    blockView(height: 150) {
                         stringView(title: "Description", summary: medicine.description, imageString: "stethoscope")
-                            .frame(height: 100)
+                            .frame(height: 150)
                             .padding(.leading)
                     }
                     

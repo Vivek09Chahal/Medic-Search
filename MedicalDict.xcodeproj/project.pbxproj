@@ -18,7 +18,7 @@
 		0CA3214F2D1BD868000B04B8 /* Dailytips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA321482D1BD868000B04B8 /* Dailytips.swift */; };
 		0CA321512D1BD9A0000B04B8 /* MedicnesForLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA321502D1BD9A0000B04B8 /* MedicnesForLetterView.swift */; };
 		0CA321532D1BDF52000B04B8 /* listView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA321522D1BDF52000B04B8 /* listView.swift */; };
-		E298217F2CB0002700CD61EB /* sideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298217E2CB0002700CD61EB /* sideBarView.swift */; };
+		E298217F2CB0002700CD61EB /* medicineSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298217E2CB0002700CD61EB /* medicineSearch.swift */; };
 		E2BCA0D32C77470700D58470 /* medicineData.json in Resources */ = {isa = PBXBuildFile; fileRef = E2BCA0D22C77470700D58470 /* medicineData.json */; };
 		E2BCA0D52C77478F00D58470 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D42C77478F00D58470 /* Medicine.swift */; };
 		E2BCA0D72C7749AF00D58470 /* medicineJsonLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D62C7749AF00D58470 /* medicineJsonLoad.swift */; };
@@ -44,7 +44,7 @@
 		0CA3214B2D1BD868000B04B8 /* TipImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipImageButton.swift; sourceTree = "<group>"; };
 		0CA321502D1BD9A0000B04B8 /* MedicnesForLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicnesForLetterView.swift; sourceTree = "<group>"; };
 		0CA321522D1BDF52000B04B8 /* listView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listView.swift; sourceTree = "<group>"; };
-		E298217E2CB0002700CD61EB /* sideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideBarView.swift; sourceTree = "<group>"; };
+		E298217E2CB0002700CD61EB /* medicineSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineSearch.swift; sourceTree = "<group>"; };
 		E2BCA0D22C77470700D58470 /* medicineData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = medicineData.json; sourceTree = "<group>"; };
 		E2BCA0D42C77478F00D58470 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		E2BCA0D62C7749AF00D58470 /* medicineJsonLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineJsonLoad.swift; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		E212A7382C7DD8CB00B0B667 /* UIVIew */ = {
 			isa = PBXGroup;
 			children = (
-				E298217E2CB0002700CD61EB /* sideBarView.swift */,
+				E298217E2CB0002700CD61EB /* medicineSearch.swift */,
 				0CA321502D1BD9A0000B04B8 /* MedicnesForLetterView.swift */,
 			);
 			path = UIVIew;
@@ -252,7 +252,7 @@
 				E2BCA0D52C77478F00D58470 /* Medicine.swift in Sources */,
 				0CA321512D1BD9A0000B04B8 /* MedicnesForLetterView.swift in Sources */,
 				E2F6D8392CB7E0E40013BF6E /* gameJsonLoad.swift in Sources */,
-				E298217F2CB0002700CD61EB /* sideBarView.swift in Sources */,
+				E298217F2CB0002700CD61EB /* medicineSearch.swift in Sources */,
 				0C98855A2CB96DE00017599C /* ContentView.swift in Sources */,
 				E2BCA0D92C774B3800D58470 /* DescriptionPage.swift in Sources */,
 			);
