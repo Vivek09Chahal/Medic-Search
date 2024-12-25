@@ -31,7 +31,7 @@ struct mainView: View {
                     .ignoresSafeArea()
                 
                 // Search Bar
-                VStack(spacing: 16) {
+                VStack() {
                     
                     Text("Medicine Search")
                         .font(.title)

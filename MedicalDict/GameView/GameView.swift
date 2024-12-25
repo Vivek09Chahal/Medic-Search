@@ -16,6 +16,7 @@ struct GameView: View {
     @State private var timeRemaining: Double = 10
     @State private var timer: Timer?
     @State private var isGameStarted = false
+    @State private var showCorrectView = false
     
     private var currentQuestion: Game {
         questions[currentQuestionIndex]
@@ -23,70 +24,81 @@ struct GameView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            ZStack {
-                Image("doodle")
-                    .resizable()
-                    .scaledToFill()
-                    .opacity(0.8)
-                    .ignoresSafeArea()
-                
-                VStack(spacing: 20) {
-                    if isGameStarted {
-                        // Status Bar
-                        HStack(spacing: 20) {
-                            statusCapsule(text: "\(currentQuestionIndex + 1)/\(questions.count)", color: .primary)
-                            statusCapsule(text: "\(Int(timeRemaining))s",
-                                          color: timeRemaining > 3 ? .primary : .red)
-                            statusCapsule(text: "Score: \(score)", color: .secondary)
-                        }
-                        .padding()
-                        
-                        // Timer Bar
-                        timerProgressBar(timeRemain: timeRemaining, maxWidth: geometry.size.width - 40)
-                        
-                        // Question View
-                        questionView(
-                            question: currentQuestion,
-                            onAnswerSelected: handleAnswer,
-                            selectedAnswer: $selectedAnswer
-                        )
-                        
-                        // Buttons Row
-                        HStack(spacing: 15) {
-                            // End Button
-                            actionButton(
-                                title: "End Game",
-                                gradient: [.red, .red.opacity(0.8)],
-                                action: endGame
+            if showCorrectView {
+                correctQuestionView(onNext: {
+                    withAnimation(.easeOut(duration: 0.5)) {
+                        showCorrectView = false
+                    }
+                    nextQuestion()
+                })
+                .transition(.scale(scale: 0.3).combined(with: .opacity))
+            } else {
+                ZStack {
+                    Image("doodle")
+                        .resizable()
+                        .scaledToFill()
+                        .opacity(0.8)
+                        .ignoresSafeArea()
+                    
+                    VStack(spacing: 20) {
+                        if isGameStarted {
+                            // Status Bar
+                            HStack(spacing: 20) {
+                                statusCapsule(text: "\(currentQuestionIndex + 1)/\(questions.count)", color: .primary)
+                                statusCapsule(text: "\(Int(timeRemaining))s",
+                                              color: timeRemaining > 3 ? .primary : .red)
+                                statusCapsule(text: "Score: \(score)", color: .secondary)
+                            }
+                            .padding()
+                            
+                            // Timer Bar
+                            timerProgressBar(timeRemain: timeRemaining, maxWidth: geometry.size.width - 40)
+                            
+                            // Question View
+                            questionView(
+                                question: currentQuestion,
+                                onAnswerSelected: handleAnswer,
+                                selectedAnswer: $selectedAnswer
                             )
                             
-                            // Next Question Button
-                            actionButton(
-                                title: "Next Question",
-                                gradient: [.blue, .blue.opacity(0.8)],
-                                action: nextQuestion
-                            )
-                            .transition(.scale.combined(with: .opacity))
-                        }
-                        .padding(.horizontal)
-                    } else {
-                        // Start Game View
-                        VStack(spacing: 20) {
-                            Text("Medical Quiz")
-                                .font(.largeTitle.bold())
-                                .foregroundColor(.primary)
-                            
-                            actionButton(
-                                title: "Start Game",
-                                gradient: [.green, .green.opacity(0.8)],
-                                action: startGame
-                            )
+                            // Buttons Row
+                            HStack(spacing: 15) {
+                                // End Button
+                                actionButton(
+                                    title: "End Game",
+                                    gradient: [.red, .red.opacity(0.8)],
+                                    action: endGame
+                                )
+                                
+                                // Next Question Button
+                                actionButton(
+                                    title: "Next Question",
+                                    gradient: [.blue, .blue.opacity(0.8)],
+                                    action: nextQuestion
+                                )
+                                .transition(.scale.combined(with: .opacity))
+                            }
+                            .padding(.horizontal)
+                        } else {
+                            // Start Game View
+                            VStack(spacing: 20) {
+                                Text("Medical Quiz")
+                                    .foregroundStyle(.white)
+                                    .font(.largeTitle.bold())
+                                    .foregroundColor(.primary)
+                                
+                                actionButton(
+                                    title: "Start Game",
+                                    gradient: [.green, .green.opacity(0.8)],
+                                    action: startGame
+                                )
+                            }
                         }
                     }
+                    .frame(maxWidth: min(geometry.size.width, 800))
+                    .padding()
+                    .center(in: geometry)
                 }
-                .frame(maxWidth: min(geometry.size.width, 800))
-                .padding()
-                .center(in: geometry)
             }
         }
         .alert("Game Complete!", isPresented: $showScore) {
@@ -103,6 +115,9 @@ struct GameView: View {
         stopTimer()
         if answer == currentQuestion.correctAnswer {
             score += 1
+            withAnimation(.spring(response: 0.6, dampingFraction: 0.6)) {
+                showCorrectView = true
+            }
         }
     }
     
