@@ -12,9 +12,12 @@ func listView( arrayData: [String],section: String, icon: String ) -> some View{
         VStack(alignment: .leading){
             HStack(){
                 Image(systemName: icon)
+                    .resizable()
+                    .frame(width: 20, height:20)
                     .foregroundStyle(.yellow)
                 Text(section)
                     .font(.title2)
+                    .padding(5)
             }
             .padding(3)
             ForEach(arrayData, id: \.self) {

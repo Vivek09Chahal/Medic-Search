@@ -12,9 +12,12 @@ func stringView(title: String, summary: String, imageString: String) -> some Vie
         VStack(alignment: .leading){
             HStack(){
                 Image(systemName: imageString)
+                    .resizable()
+                    .frame(width: 20, height: 20)
                     .foregroundStyle(.yellow)
                 Text(title)
                     .font(.title2)
+                    .padding(5)
             }
             .padding(3)
             Divider()

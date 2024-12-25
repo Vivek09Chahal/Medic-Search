@@ -24,80 +24,66 @@ struct DescriptionPage: View {
                     ZStack{
                         HStack{
                             Image(systemName: "pills.fill")
+                                .resizable()
+                                .frame(width: 50, height: 40)
+                                .padding()
                             
                                 .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.yellow, .orange]), startPoint: .topLeading, endPoint: .bottomTrailing))
                             Text("\(medicine.medicineName) ")
                                 .font(.system(size: 50))
-                                .foregroundStyle(.black)
                         }
                         .padding(7)
                     }
                     .background(.ultraThinMaterial)
                     .cornerRadius(20)
                     
-                    
-                    ZStack(alignment: .leading){
-                        ExtractView(width: 0.0, height: 150, cornerRadius: 25.0)
+                    blockView(height: 100) {
                         stringView(title: "Description", summary: medicine.description, imageString: "stethoscope")
                             .frame(height: 100)
                             .padding(.leading)
                     }
-                    .padding(.horizontal, 2)
                     
-                    ZStack{
-                        ExtractView(width: 0.0, height: 200, cornerRadius: 25.0)
+                    blockView(alignment: .center, height: 200) {
                         HStack{
                             listView(arrayData: medicine.uses, section:"Usage" ,icon:"cross.case")
-                                .frame(width: 165, height: 150)
-                            Capsule().fill(Color.secondary).frame(width: 1.0)
+                                .frame(width: 165)
+                            Capsule().fill(Color.secondary).frame(width: 2.0)
                             
                             listView(arrayData: medicine.precautions, section:"Precautions", icon:"exclamationmark.shield")
-                                .frame(width: 165, height: 150)
-                            Capsule().fill(Color.secondary).frame(width: 1.0)
+                                .frame(width: 165)
+                            Capsule().fill(Color.secondary).frame(width: 2.0)
                             
                             listView(arrayData: medicine.interactions, section:"Interaction", icon:"pills.circle")
-                                .frame(width: 165, height: 150)
+                                .frame(width: 165)
                         }
                     }
                 }
                 
-                
-                // How To Use
-                ZStack(alignment: .topLeading){
-                    ExtractView(width: 0.0, height: 150, cornerRadius: 25.0)
-                    stringView(title: "How To Use", summary: medicine.howToUse, imageString: "checkmark.seal.fill")
+                blockView(alignment: .topLeading, height: 150) {
+                    stringView(title: "How To Use", summary: medicine.howToUse, imageString: "shield.lefthalf.filled.badge.checkmark")
                         .frame(height: 150)
                         .padding(.leading)
                 }
-                .padding(2)
                 
                 Spacer()
-                // side effect
-                ZStack(alignment: .topLeading){
-                    ExtractView(width: 0.0, height: 150, cornerRadius: 25.0)
-                    listView(arrayData: medicine.sideEffects, section: "Side effects", icon: "magnifyingglass")
+                
+                blockView(alignment: .topLeading, height: 150) {
+                    listView(arrayData: medicine.sideEffects, section: "Side effects", icon: "staroflife.shield")
                         .frame(height: 150)
                         .padding(.leading)
                 }
-                .padding(2)
                 
-                //              Storage instructions
-                ZStack(alignment: .leading){
-                    ExtractView(width: 0.0, height: 150, cornerRadius: 25.0)
+                blockView(height: 150) {
                     stringView(title: "Storage Instruction", summary: medicine.storageInstructions, imageString: "shippingbox.fill")
                         .frame(height: 150)
                         .padding(.leading)
                 }
-                .padding(.horizontal, 2)
                 
-                //              Warning
-                ZStack(alignment: .leading){
-                    ExtractView(width: 0.0, height: 150, cornerRadius: 25.0)
+                blockView(height: 150) {
                     stringView(title: "Warning", summary: medicine.warnings, imageString: "exclamationmark.triangle.fill")
                         .frame(height: 150)
                         .padding(.leading)
                 }
-                .padding(.horizontal, 2)
             }
             .scaleEffect(1)
             .frame(width: 600)
@@ -123,7 +109,6 @@ struct DescriptionPage: View {
 struct ExtractView: View{
     
     //    var foregroundStyle: any ShapeStyle
-    var width: CGFloat
     var height: CGFloat
     var cornerRadius: CGFloat
     
@@ -133,5 +118,12 @@ struct ExtractView: View{
             .foregroundStyle(.ultraThinMaterial)
             .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
             .frame(height: height)
+    }
+}
+
+private func blockView(alignment: Alignment = .leading, height: CGFloat, @ViewBuilder content: () -> some View) -> some View {
+    ZStack(alignment: alignment) {
+        ExtractView(height: height, cornerRadius: 25.0)
+        content()
     }
 }

@@ -7,18 +7,54 @@ struct MedicinesForLetterView: View {
     var body: some View {
         ZStack {
             LinearGradient(
-                gradient: Gradient(colors: [.blue.opacity(0.05), .white]),
+                gradient: Gradient(colors: [.red.opacity(0.5), .pearl]),
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
             .ignoresSafeArea()
-            List(medicines, id: \.medicineName) { med in
-                NavigationLink(destination: DescriptionPage(medicine: med)) {
-                    Text(med.medicineName)
+            
+            ScrollView {
+                LazyVStack(spacing: 12) {
+                    ForEach(medicines, id: \.medicineName) { med in
+                        NavigationLink(destination: DescriptionPage(medicine: med)) {
+                            MedicineCardView(medicine: med)
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                    }
                 }
+                .padding()
             }
-            .listStyle(.insetGrouped)
             .navigationTitle("Medicines - \(letter)")
         }
+    }
+}
+
+struct MedicineCardView: View {
+    let medicine: Medicine
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(medicine.medicineName)
+                .foregroundStyle(.black)
+                .font(.title2)
+                .fontWeight(.bold)
+            
+            HStack {
+                Text(medicine.description)
+                    .foregroundStyle(.black)
+                    .font(.title2)
+                    .lineLimit(2)
+                
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .foregroundStyle(.gray)
+            }
+        }
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color.pearl)
+                .shadow(color: .black.opacity(0.2), radius: 5, x: 0, y: 2)
+        )
     }
 }

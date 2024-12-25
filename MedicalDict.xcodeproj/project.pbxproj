@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0C2786D92CDCAF2900009870 /* popUpAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2786D82CDCAF2900009870 /* popUpAnimation.swift */; };
-		0C5EC55F2C86EDA000865908 /* sideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5EC55E2C86EDA000865908 /* sideEffect.swift */; };
 		0C98855A2CB96DE00017599C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9885592CB96DE00017599C /* ContentView.swift */; };
 		0C9D5D2B2C6A42870037E1B0 /* MedicalDictApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */; };
 		0C9D5D2F2C6A42880037E1B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */; };
@@ -20,12 +19,11 @@
 		0CA321512D1BD9A0000B04B8 /* MedicnesForLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA321502D1BD9A0000B04B8 /* MedicnesForLetterView.swift */; };
 		0CA321532D1BDF52000B04B8 /* listView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA321522D1BDF52000B04B8 /* listView.swift */; };
 		E298217F2CB0002700CD61EB /* sideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298217E2CB0002700CD61EB /* sideBarView.swift */; };
-		E2AFA70E2CB7DA650033C695 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFA70D2CB7DA650033C695 /* GameView.swift */; };
 		E2BCA0D32C77470700D58470 /* medicineData.json in Resources */ = {isa = PBXBuildFile; fileRef = E2BCA0D22C77470700D58470 /* medicineData.json */; };
 		E2BCA0D52C77478F00D58470 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D42C77478F00D58470 /* Medicine.swift */; };
 		E2BCA0D72C7749AF00D58470 /* medicineJsonLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D62C7749AF00D58470 /* medicineJsonLoad.swift */; };
 		E2BCA0D92C774B3800D58470 /* DescriptionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D82C774B3800D58470 /* DescriptionPage.swift */; };
-		E2F6D8372CB7DB8A0013BF6E /* StringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D8362CB7DB8A0013BF6E /* StringView.swift */; };
+		E2F6D8372CB7DB8A0013BF6E /* stringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D8362CB7DB8A0013BF6E /* stringView.swift */; };
 		E2F6D8392CB7E0E40013BF6E /* gameJsonLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D8382CB7E0E40013BF6E /* gameJsonLoad.swift */; };
 		E2F6D83E2CB7E5A50013BF6E /* gameData.json in Resources */ = {isa = PBXBuildFile; fileRef = E2F6D83D2CB7E5A50013BF6E /* gameData.json */; };
 		E2F6D8402CB7E5E00013BF6E /* gameVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D83F2CB7E5E00013BF6E /* gameVariables.swift */; };
@@ -35,7 +33,6 @@
 		0C2444402C9BCB6200837D5A /* MedicalDict.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MedicalDict.entitlements; sourceTree = "<group>"; };
 		0C2444412C9BF8FE00837D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0C2786D82CDCAF2900009870 /* popUpAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpAnimation.swift; sourceTree = "<group>"; };
-		0C5EC55E2C86EDA000865908 /* sideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideEffect.swift; sourceTree = "<group>"; };
 		0C9885592CB96DE00017599C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0C9D5D272C6A42870037E1B0 /* MedicalDict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalDict.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDictApp.swift; sourceTree = "<group>"; };
@@ -48,16 +45,19 @@
 		0CA321502D1BD9A0000B04B8 /* MedicnesForLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicnesForLetterView.swift; sourceTree = "<group>"; };
 		0CA321522D1BDF52000B04B8 /* listView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listView.swift; sourceTree = "<group>"; };
 		E298217E2CB0002700CD61EB /* sideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideBarView.swift; sourceTree = "<group>"; };
-		E2AFA70D2CB7DA650033C695 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		E2BCA0D22C77470700D58470 /* medicineData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = medicineData.json; sourceTree = "<group>"; };
 		E2BCA0D42C77478F00D58470 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		E2BCA0D62C7749AF00D58470 /* medicineJsonLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineJsonLoad.swift; sourceTree = "<group>"; };
 		E2BCA0D82C774B3800D58470 /* DescriptionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionPage.swift; sourceTree = "<group>"; };
-		E2F6D8362CB7DB8A0013BF6E /* StringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringView.swift; sourceTree = "<group>"; };
+		E2F6D8362CB7DB8A0013BF6E /* stringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stringView.swift; sourceTree = "<group>"; };
 		E2F6D8382CB7E0E40013BF6E /* gameJsonLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameJsonLoad.swift; sourceTree = "<group>"; };
 		E2F6D83D2CB7E5A50013BF6E /* gameData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gameData.json; sourceTree = "<group>"; };
 		E2F6D83F2CB7E5E00013BF6E /* gameVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameVariables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0C1D60642D1C53BA00B5293F /* GameView */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = GameView; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0C9D5D242C6A42870037E1B0 /* Frameworks */ = {
@@ -70,16 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C9885582CB96D850017599C /* Game */ = {
+		0C9885582CB96D850017599C /* GameDataSet */ = {
 			isa = PBXGroup;
 			children = (
-				E2AFA70D2CB7DA650033C695 /* GameView.swift */,
 				E2F6D83F2CB7E5E00013BF6E /* gameVariables.swift */,
 				E2F6D8382CB7E0E40013BF6E /* gameJsonLoad.swift */,
 				E2F6D83D2CB7E5A50013BF6E /* gameData.json */,
 				0C2786D82CDCAF2900009870 /* popUpAnimation.swift */,
 			);
-			path = Game;
+			path = GameDataSet;
 			sourceTree = "<group>";
 		};
 		0C9D5D1E2C6A42870037E1B0 = {
@@ -106,10 +105,11 @@
 				0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */,
 				0C9885592CB96DE00017599C /* ContentView.swift */,
 				0CA321472D1BD832000B04B8 /* TipFiles */,
+				0C1D60642D1C53BA00B5293F /* GameView */,
 				E212A73A2C7DD93D00B0B667 /* DescriptionPageView */,
 				E212A7382C7DD8CB00B0B667 /* UIVIew */,
-				E27F46B62C74A0D3008C08E4 /* ListsData */,
-				0C9885582CB96D850017599C /* Game */,
+				E27F46B62C74A0D3008C08E4 /* MedicineDataSet */,
+				0C9885582CB96D850017599C /* GameDataSet */,
 				0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */,
 				0C9D5D302C6A42880037E1B0 /* Preview Content */,
 			);
@@ -148,21 +148,20 @@
 			isa = PBXGroup;
 			children = (
 				E2BCA0D82C774B3800D58470 /* DescriptionPage.swift */,
-				0C5EC55E2C86EDA000865908 /* sideEffect.swift */,
-				E2F6D8362CB7DB8A0013BF6E /* StringView.swift */,
+				E2F6D8362CB7DB8A0013BF6E /* stringView.swift */,
 				0CA321522D1BDF52000B04B8 /* listView.swift */,
 			);
 			path = DescriptionPageView;
 			sourceTree = "<group>";
 		};
-		E27F46B62C74A0D3008C08E4 /* ListsData */ = {
+		E27F46B62C74A0D3008C08E4 /* MedicineDataSet */ = {
 			isa = PBXGroup;
 			children = (
 				E2BCA0D62C7749AF00D58470 /* medicineJsonLoad.swift */,
 				E2BCA0D42C77478F00D58470 /* Medicine.swift */,
 				E2BCA0D22C77470700D58470 /* medicineData.json */,
 			);
-			path = ListsData;
+			path = MedicineDataSet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +178,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0C1D60642D1C53BA00B5293F /* GameView */,
 			);
 			name = MedicalDict;
 			productName = MedicalDict;
@@ -239,7 +241,6 @@
 			files = (
 				0CA321532D1BDF52000B04B8 /* listView.swift in Sources */,
 				E2F6D8402CB7E5E00013BF6E /* gameVariables.swift in Sources */,
-				0C5EC55F2C86EDA000865908 /* sideEffect.swift in Sources */,
 				0C9D5D2B2C6A42870037E1B0 /* MedicalDictApp.swift in Sources */,
 				0C2786D92CDCAF2900009870 /* popUpAnimation.swift in Sources */,
 				0CA3214C2D1BD868000B04B8 /* TipCard.swift in Sources */,
@@ -247,10 +248,9 @@
 				0CA3214E2D1BD868000B04B8 /* TipBarView.swift in Sources */,
 				0CA3214F2D1BD868000B04B8 /* Dailytips.swift in Sources */,
 				E2BCA0D72C7749AF00D58470 /* medicineJsonLoad.swift in Sources */,
-				E2F6D8372CB7DB8A0013BF6E /* StringView.swift in Sources */,
+				E2F6D8372CB7DB8A0013BF6E /* stringView.swift in Sources */,
 				E2BCA0D52C77478F00D58470 /* Medicine.swift in Sources */,
 				0CA321512D1BD9A0000B04B8 /* MedicnesForLetterView.swift in Sources */,
-				E2AFA70E2CB7DA650033C695 /* GameView.swift in Sources */,
 				E2F6D8392CB7E0E40013BF6E /* gameJsonLoad.swift in Sources */,
 				E298217F2CB0002700CD61EB /* sideBarView.swift in Sources */,
 				0C98855A2CB96DE00017599C /* ContentView.swift in Sources */,
