@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C1D60722D1C6F0D00B5293F /* onSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D60712D1C6F0D00B5293F /* onSearchView.swift */; };
+		0C1D60742D1C6F1A00B5293F /* alphabeticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D60732D1C6F1A00B5293F /* alphabeticView.swift */; };
 		0C2786D92CDCAF2900009870 /* popUpAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2786D82CDCAF2900009870 /* popUpAnimation.swift */; };
 		0C98855A2CB96DE00017599C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9885592CB96DE00017599C /* ContentView.swift */; };
 		0C9D5D2B2C6A42870037E1B0 /* MedicalDictApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C1D60712D1C6F0D00B5293F /* onSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onSearchView.swift; sourceTree = "<group>"; };
+		0C1D60732D1C6F1A00B5293F /* alphabeticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alphabeticView.swift; sourceTree = "<group>"; };
 		0C2444402C9BCB6200837D5A /* MedicalDict.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MedicalDict.entitlements; sourceTree = "<group>"; };
 		0C2444412C9BF8FE00837D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0C2786D82CDCAF2900009870 /* popUpAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpAnimation.swift; sourceTree = "<group>"; };
@@ -140,6 +144,8 @@
 			children = (
 				E298217E2CB0002700CD61EB /* medicineSearch.swift */,
 				0CA321502D1BD9A0000B04B8 /* MedicnesForLetterView.swift */,
+				0C1D60712D1C6F0D00B5293F /* onSearchView.swift */,
+				0C1D60732D1C6F1A00B5293F /* alphabeticView.swift */,
 			);
 			path = UIVIew;
 			sourceTree = "<group>";
@@ -250,7 +256,9 @@
 				E2BCA0D72C7749AF00D58470 /* medicineJsonLoad.swift in Sources */,
 				E2F6D8372CB7DB8A0013BF6E /* stringView.swift in Sources */,
 				E2BCA0D52C77478F00D58470 /* Medicine.swift in Sources */,
+				0C1D60722D1C6F0D00B5293F /* onSearchView.swift in Sources */,
 				0CA321512D1BD9A0000B04B8 /* MedicnesForLetterView.swift in Sources */,
+				0C1D60742D1C6F1A00B5293F /* alphabeticView.swift in Sources */,
 				E2F6D8392CB7E0E40013BF6E /* gameJsonLoad.swift in Sources */,
 				E298217F2CB0002700CD61EB /* medicineSearch.swift in Sources */,
 				0C98855A2CB96DE00017599C /* ContentView.swift in Sources */,
