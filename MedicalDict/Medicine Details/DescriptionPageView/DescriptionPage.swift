@@ -16,6 +16,7 @@ struct DescriptionPage: View {
             
             Image("description")
                 .resizable()
+                .blur(radius: 5)
                 .frame(width: .infinity, height: .infinity)
                 .ignoresSafeArea()
             
@@ -25,7 +26,7 @@ struct DescriptionPage: View {
                         HStack{
                             Image(systemName: "pills.fill")
                                 .resizable()
-                                .frame(width: 50, height: 40)
+                                .frame(width: 50, height: 30)
                                 .padding()
                             
                                 .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.yellow, .orange]), startPoint: .topLeading, endPoint: .bottomTrailing))
@@ -35,59 +36,62 @@ struct DescriptionPage: View {
                         .padding(7)
                     }
                     .background(.ultraThinMaterial)
-                    .cornerRadius(20)
+                    .cornerRadius(45)
                     
                     blockView(height: 150) {
-                        stringView(title: "Description", summary: medicine.description, imageString: "stethoscope")
+                        stringView(title: "Description", summary: medicine.description, imageString: "stethoscope", color: .blue)
                             .frame(height: 150)
                             .padding(.leading)
                     }
                     
-                    blockView(alignment: .center, height: 200) {
+                    VStack(alignment: .leading){
                         HStack{
-                            listView(arrayData: medicine.uses, section:"Usage" ,icon:"cross.case")
-                                .frame(width: 165)
-                            Capsule().fill(Color.secondary).frame(width: 2.0)
+                            blockView(height: 250, width: 295) {
+                                listView(arrayData: medicine.uses, section:"Usage" ,icon:"cross.case", color: Color(red: 0.2, green: 0.7, blue: 0.3))
+                                    .frame(width: 250, height: 250)
+                            }
                             
-                            listView(arrayData: medicine.precautions, section:"Precautions", icon:"exclamationmark.shield")
-                                .frame(width: 165)
-                            Capsule().fill(Color.secondary).frame(width: 2.0)
+                            blockView(height: 250, width: 295) {
+                                listView(arrayData: medicine.precautions, section:"Precautions", icon:"exclamationmark.shield", color: .orange)
+                                    .frame(width: 250, height: 250)
+                            }
+                        }
+                        
+                        HStack{
+                            blockView(height: 250, width: 295) {
+                                listView(arrayData: medicine.interactions, section:"Interaction", icon:"pills.circle", color: Color(red: 0.8, green: 0.2, blue: 0.2))
+                                    .frame(width: 250, height: 250)
+                            }
                             
-                            listView(arrayData: medicine.interactions, section:"Interaction", icon:"pills.circle")
-                                .frame(width: 165)
+                            blockView(height: 250, width: 295) {
+                                listView(arrayData: medicine.sideEffects, section: "Side effects", icon: "staroflife.shield", color: Color(red: 0.9, green: 0.3, blue: 0.3))
+                                    .frame(width: 250, height: 250)
+                            }
                         }
                     }
                 }
                 
                 blockView(alignment: .topLeading, height: 150) {
-                    stringView(title: "How To Use", summary: medicine.howToUse, imageString: "shield.lefthalf.filled.badge.checkmark")
+                    stringView(title: "How To Use", summary: medicine.howToUse, imageString: "shield.lefthalf.filled.badge.checkmark", color: Color(red: 0.2, green: 0.5, blue: 0.8))
                         .frame(height: 150)
                         .padding(.leading)
                 }
                 
                 Spacer()
-                
-                blockView(alignment: .topLeading, height: 150) {
-                    listView(arrayData: medicine.sideEffects, section: "Side effects", icon: "staroflife.shield")
+                blockView(height: 150) {
+                    stringView(title: "Storage Instruction", summary: medicine.storageInstructions, imageString: "shippingbox.fill", color: Color(red: 0.4, green: 0.4, blue: 0.8))
                         .frame(height: 150)
                         .padding(.leading)
                 }
                 
                 blockView(height: 150) {
-                    stringView(title: "Storage Instruction", summary: medicine.storageInstructions, imageString: "shippingbox.fill")
-                        .frame(height: 150)
-                        .padding(.leading)
-                }
-                
-                blockView(height: 150) {
-                    stringView(title: "Warning", summary: medicine.warnings, imageString: "exclamationmark.triangle.fill")
+                    stringView(title: "Warning", summary: medicine.warnings, imageString: "exclamationmark.triangle.fill", color: Color(red: 0.9, green: 0.6, blue: 0.2))
                         .frame(height: 150)
                         .padding(.leading)
                 }
             }
-            .scaleEffect(1)
+//            .scaleEffect(1)
             .frame(width: 600)
-            .cornerRadius(25.0)
         }
     }
 }
@@ -105,25 +109,11 @@ struct DescriptionPage: View {
                                                warnings: "Do not exceed 4g per day. Overdose can lead to severe liver damage."))
 }
 
-
-struct ExtractView: View{
-    
-    //    var foregroundStyle: any ShapeStyle
-    var height: CGFloat
-    var cornerRadius: CGFloat
-    
-    var body: some View{
-        
-        Rectangle()
-            .foregroundStyle(.ultraThinMaterial)
-            .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
-            .frame(height: height)
-    }
-}
-
-private func blockView(alignment: Alignment = .leading, height: CGFloat, @ViewBuilder content: () -> some View) -> some View {
-    ZStack(alignment: alignment) {
-        ExtractView(height: height, cornerRadius: 25.0)
-        content()
-    }
+private func blockView(alignment: Alignment = .leading, height: CGFloat, width: CGFloat = .infinity, @ViewBuilder content: () -> some View) -> some View {
+    content()
+        .frame(width: width, height: height, alignment: alignment)
+        .background(
+            RoundedRectangle(cornerRadius: 45.0)
+                .foregroundStyle(.ultraThinMaterial)
+        )
 }

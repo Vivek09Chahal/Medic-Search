@@ -24,22 +24,18 @@ struct GameView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            if showCorrectView {
-                correctQuestionView(onNext: {
-                    withAnimation(.easeOut(duration: 0.5)) {
-                        showCorrectView = false
-                    }
-                    nextQuestion()
-                })
-                .transition(.scale(scale: 0.3).combined(with: .opacity))
-            } else {
-                ZStack {
-                    Image("doodle")
-                        .resizable()
-                        .scaledToFill()
-                        .opacity(0.8)
-                        .ignoresSafeArea()
-                    
+            ZStack {
+                GradientBarsView()
+                
+                if showCorrectView {
+                    correctQuestionView(onNext: {
+                        withAnimation(.easeOut(duration: 0.5)) {
+                            showCorrectView = false
+                        }
+                        nextQuestion()
+                    })
+                    .transition(.scale(scale: 0.3).combined(with: .opacity))
+                } else {
                     VStack(spacing: 20) {
                         if isGameStarted {
                             // Status Bar
@@ -66,14 +62,14 @@ struct GameView: View {
                                 // End Button
                                 actionButton(
                                     title: "End Game",
-                                    gradient: [.red, .red.opacity(0.8)],
+                                    gradient: [Color(red: 0.8, green: 0.2, blue: 0.2), Color(red: 0.9, green: 0.3, blue: 0.3)], // Softer red for less anxiety
                                     action: endGame
                                 )
                                 
                                 // Next Question Button
                                 actionButton(
                                     title: "Next Question",
-                                    gradient: [.blue, .blue.opacity(0.8)],
+                                    gradient: [Color(red: 0.2, green: 0.5, blue: 0.8), Color(red: 0.3, green: 0.6, blue: 0.9)], // Trust-inducing blue
                                     action: nextQuestion
                                 )
                                 .transition(.scale.combined(with: .opacity))
@@ -89,7 +85,7 @@ struct GameView: View {
                                 
                                 actionButton(
                                     title: "Start Game",
-                                    gradient: [.green, .green.opacity(0.8)],
+                                    gradient: [Color(red: 0.2, green: 0.7, blue: 0.3), Color(red: 0.3, green: 0.8, blue: 0.4)], // Encouraging green
                                     action: startGame
                                 )
                             }
@@ -97,9 +93,10 @@ struct GameView: View {
                     }
                     .frame(maxWidth: min(geometry.size.width, 800))
                     .padding()
-                    .center(in: geometry)
                 }
             }
+            .frame(maxWidth: geometry.size.width, maxHeight: geometry.size.height)
+            .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
         }
         .alert("Game Complete!", isPresented: $showScore) {
             Button("Play Again", action: resetGame)
@@ -115,9 +112,7 @@ struct GameView: View {
         stopTimer()
         if answer == currentQuestion.correctAnswer {
             score += 1
-            withAnimation(.spring(response: 0.6, dampingFraction: 0.6)) {
-                showCorrectView = true
-            }
+            showCorrectView = true
         }
     }
     
@@ -180,15 +175,36 @@ struct GameView: View {
     }
 }
 
-
-// Helper extension for centering content
-extension View {
-    func center(in geometry: GeometryProxy) -> some View {
-        self.frame(maxWidth: geometry.size.width, maxHeight: geometry.size.height)
-            .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
-    }
-}
-
 #Preview {
     GameView()
+}
+
+struct GradientBarsView: View {
+    var body: some View {
+        GeometryReader { geometry in
+            Circle()
+                .fill(
+                    LinearGradient(
+                        colors: [.green.opacity(0.3), .blue.opacity(0.3)],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
+                .frame(width: geometry.size.width * 1.2)
+                .position(x: geometry.size.width * 0.2, y: geometry.size.height * 0.2)
+                .blur(radius: 5)
+            
+            Circle()
+                .fill(
+                    LinearGradient(
+                        colors: [.orange.opacity(0.3), .pink.opacity(0.3)],
+                        startPoint: .topTrailing,
+                        endPoint: .bottomLeading
+                    )
+                )
+                .frame(width: geometry.size.width)
+                .position(x: geometry.size.width * 0.8, y: geometry.size.height * 0.8)
+                .blur(radius: 5)
+        }
+    }
 }

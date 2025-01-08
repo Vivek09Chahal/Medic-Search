@@ -7,30 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C1D60722D1C6F0D00B5293F /* onSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D60712D1C6F0D00B5293F /* onSearchView.swift */; };
-		0C1D60742D1C6F1A00B5293F /* alphabeticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D60732D1C6F1A00B5293F /* alphabeticView.swift */; };
-		0C1D60762D1C759B00B5293F /* medicineSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D60752D1C759B00B5293F /* medicineSearch.swift */; };
 		0C2786D92CDCAF2900009870 /* popUpAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2786D82CDCAF2900009870 /* popUpAnimation.swift */; };
 		0C98855A2CB96DE00017599C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9885592CB96DE00017599C /* ContentView.swift */; };
 		0C9D5D2B2C6A42870037E1B0 /* MedicalDictApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */; };
 		0C9D5D2F2C6A42880037E1B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */; };
 		0C9D5D322C6A42880037E1B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9D5D312C6A42880037E1B0 /* Preview Assets.xcassets */; };
-		0CA321512D1BD9A0000B04B8 /* MedicnesForLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA321502D1BD9A0000B04B8 /* MedicnesForLetterView.swift */; };
-		0CA321532D1BDF52000B04B8 /* listView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA321522D1BDF52000B04B8 /* listView.swift */; };
 		E2BCA0D32C77470700D58470 /* medicineData.json in Resources */ = {isa = PBXBuildFile; fileRef = E2BCA0D22C77470700D58470 /* medicineData.json */; };
 		E2BCA0D52C77478F00D58470 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D42C77478F00D58470 /* Medicine.swift */; };
 		E2BCA0D72C7749AF00D58470 /* medicineJsonLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D62C7749AF00D58470 /* medicineJsonLoad.swift */; };
-		E2BCA0D92C774B3800D58470 /* DescriptionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D82C774B3800D58470 /* DescriptionPage.swift */; };
-		E2F6D8372CB7DB8A0013BF6E /* stringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D8362CB7DB8A0013BF6E /* stringView.swift */; };
 		E2F6D8392CB7E0E40013BF6E /* gameJsonLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D8382CB7E0E40013BF6E /* gameJsonLoad.swift */; };
 		E2F6D83E2CB7E5A50013BF6E /* gameData.json in Resources */ = {isa = PBXBuildFile; fileRef = E2F6D83D2CB7E5A50013BF6E /* gameData.json */; };
 		E2F6D8402CB7E5E00013BF6E /* gameVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D83F2CB7E5E00013BF6E /* gameVariables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C1D60712D1C6F0D00B5293F /* onSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onSearchView.swift; sourceTree = "<group>"; };
-		0C1D60732D1C6F1A00B5293F /* alphabeticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alphabeticView.swift; sourceTree = "<group>"; };
-		0C1D60752D1C759B00B5293F /* medicineSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineSearch.swift; sourceTree = "<group>"; };
 		0C2444402C9BCB6200837D5A /* MedicalDict.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MedicalDict.entitlements; sourceTree = "<group>"; };
 		0C2444412C9BF8FE00837D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0C2786D82CDCAF2900009870 /* popUpAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpAnimation.swift; sourceTree = "<group>"; };
@@ -39,20 +29,33 @@
 		0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDictApp.swift; sourceTree = "<group>"; };
 		0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C9D5D312C6A42880037E1B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0CA321502D1BD9A0000B04B8 /* MedicnesForLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicnesForLetterView.swift; sourceTree = "<group>"; };
-		0CA321522D1BDF52000B04B8 /* listView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listView.swift; sourceTree = "<group>"; };
 		E2BCA0D22C77470700D58470 /* medicineData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = medicineData.json; sourceTree = "<group>"; };
 		E2BCA0D42C77478F00D58470 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		E2BCA0D62C7749AF00D58470 /* medicineJsonLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineJsonLoad.swift; sourceTree = "<group>"; };
-		E2BCA0D82C774B3800D58470 /* DescriptionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionPage.swift; sourceTree = "<group>"; };
-		E2F6D8362CB7DB8A0013BF6E /* stringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stringView.swift; sourceTree = "<group>"; };
 		E2F6D8382CB7E0E40013BF6E /* gameJsonLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameJsonLoad.swift; sourceTree = "<group>"; };
 		E2F6D83D2CB7E5A50013BF6E /* gameData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gameData.json; sourceTree = "<group>"; };
 		E2F6D83F2CB7E5E00013BF6E /* gameVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameVariables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0CBE88CA2D2EA5F30056416C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				DescriptionPageView/DescriptionPage.swift,
+				DescriptionPageView/listView.swift,
+				DescriptionPageView/stringView.swift,
+				UIVIew/alphabeticView.swift,
+				UIVIew/medicineSearch.swift,
+				UIVIew/MedicnesForLetterView.swift,
+				UIVIew/onSearchView.swift,
+			);
+			target = 0C9D5D262C6A42870037E1B0 /* MedicalDict */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		0C1D60642D1C53BA00B5293F /* GameView */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = GameView; sourceTree = "<group>"; };
+		0CBE88B22D2EA5A40056416C /* Medicine Details */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (0CBE88CA2D2EA5F30056416C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Medicine Details"; sourceTree = "<group>"; };
+		0CBE88B32D2EA5BD0056416C /* Game Folder */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Game Folder"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +103,9 @@
 				0C2444402C9BCB6200837D5A /* MedicalDict.entitlements */,
 				0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */,
 				0C9885592CB96DE00017599C /* ContentView.swift */,
-				0C1D60642D1C53BA00B5293F /* GameView */,
-				E212A73A2C7DD93D00B0B667 /* DescriptionPageView */,
-				E212A7382C7DD8CB00B0B667 /* UIVIew */,
 				E27F46B62C74A0D3008C08E4 /* MedicineDataSet */,
+				0CBE88B22D2EA5A40056416C /* Medicine Details */,
+				0CBE88B32D2EA5BD0056416C /* Game Folder */,
 				0C9885582CB96D850017599C /* GameDataSet */,
 				0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */,
 				0C9D5D302C6A42880037E1B0 /* Preview Content */,
@@ -117,27 +119,6 @@
 				0C9D5D312C6A42880037E1B0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		E212A7382C7DD8CB00B0B667 /* UIVIew */ = {
-			isa = PBXGroup;
-			children = (
-				0C1D60752D1C759B00B5293F /* medicineSearch.swift */,
-				0CA321502D1BD9A0000B04B8 /* MedicnesForLetterView.swift */,
-				0C1D60712D1C6F0D00B5293F /* onSearchView.swift */,
-				0C1D60732D1C6F1A00B5293F /* alphabeticView.swift */,
-			);
-			path = UIVIew;
-			sourceTree = "<group>";
-		};
-		E212A73A2C7DD93D00B0B667 /* DescriptionPageView */ = {
-			isa = PBXGroup;
-			children = (
-				E2BCA0D82C774B3800D58470 /* DescriptionPage.swift */,
-				E2F6D8362CB7DB8A0013BF6E /* stringView.swift */,
-				0CA321522D1BDF52000B04B8 /* listView.swift */,
-			);
-			path = DescriptionPageView;
 			sourceTree = "<group>";
 		};
 		E27F46B62C74A0D3008C08E4 /* MedicineDataSet */ = {
@@ -166,7 +147,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				0C1D60642D1C53BA00B5293F /* GameView */,
+				0CBE88B32D2EA5BD0056416C /* Game Folder */,
 			);
 			name = MedicalDict;
 			productName = MedicalDict;
@@ -225,20 +206,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CA321532D1BDF52000B04B8 /* listView.swift in Sources */,
 				E2F6D8402CB7E5E00013BF6E /* gameVariables.swift in Sources */,
 				0C9D5D2B2C6A42870037E1B0 /* MedicalDictApp.swift in Sources */,
 				0C2786D92CDCAF2900009870 /* popUpAnimation.swift in Sources */,
 				E2BCA0D72C7749AF00D58470 /* medicineJsonLoad.swift in Sources */,
-				E2F6D8372CB7DB8A0013BF6E /* stringView.swift in Sources */,
 				E2BCA0D52C77478F00D58470 /* Medicine.swift in Sources */,
-				0C1D60722D1C6F0D00B5293F /* onSearchView.swift in Sources */,
-				0CA321512D1BD9A0000B04B8 /* MedicnesForLetterView.swift in Sources */,
-				0C1D60742D1C6F1A00B5293F /* alphabeticView.swift in Sources */,
-				0C1D60762D1C759B00B5293F /* medicineSearch.swift in Sources */,
 				E2F6D8392CB7E0E40013BF6E /* gameJsonLoad.swift in Sources */,
 				0C98855A2CB96DE00017599C /* ContentView.swift in Sources */,
-				E2BCA0D92C774B3800D58470 /* DescriptionPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

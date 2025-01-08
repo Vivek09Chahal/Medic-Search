@@ -7,22 +7,22 @@
 
 import SwiftUI
 
-func stringView(title: String, summary: String, imageString: String) -> some View {
+func stringView(title: String, summary: String, imageString: String, color: Color) -> some View {
     ScrollView(showsIndicators: false){
         VStack(alignment: .leading){
             HStack(){
                 Image(systemName: imageString)
                     .resizable()
-                    .frame(width: 20, height: 20)
-                    .foregroundStyle(.yellow)
+                    .frame(width: 30, height: 30)
+                    .foregroundStyle(color)
                 Text(title)
-                    .font(.title2)
+                    .font(.title)
                     .padding(5)
             }
             .padding(3)
             Divider()
             Text(summary)
-                .font(.title3)
+                .font(.title2)
         }
     }
 }

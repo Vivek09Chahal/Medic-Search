@@ -11,7 +11,7 @@ func timerProgressBar(timeRemain: Double, maxWidth: CGFloat) -> some View {
     ZStack(alignment: .leading) {
         Capsule()
             .fill(.ultraThinMaterial)
-            .frame(height: 8)
+            .frame(width: .infinity, height: 8)
         
         Capsule()
             .fill(

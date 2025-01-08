@@ -20,18 +20,18 @@ struct onSearchView: View {
     }
     
     var body: some View {
-        ScrollView {
             LazyVStack(spacing: 10) {
                 ForEach(filteredMedicines) { medicine in
                     NavigationLink(destination: DescriptionPage(medicine: medicine)) {
                         HStack {
                             Text(medicine.medicineName)
                                 .foregroundStyle(.primary)
+                                .font(.title2)
                                 .padding()
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .background(
                                     RoundedRectangle(cornerRadius: 12)
-                                        .fill(Color(.systemBackground))
+                                        .fill(Color(.secondarySystemBackground))
                                         .shadow(color: .black.opacity(0.05), radius: 4)
                                 )
                         }
@@ -39,6 +39,6 @@ struct onSearchView: View {
                     }
                 }
             }
-        }
+            .ignoresSafeArea()
     }
 }

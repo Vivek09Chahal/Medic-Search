@@ -33,9 +33,10 @@ struct questionView: View {
                         .background(
                             ZStack {
                                 if selectedAnswer == nil {
-                                    LinearGradient(colors: [.blue.opacity(0.8), .blue.opacity(0.6)],
-                                                   startPoint: .topLeading,
-                                                   endPoint: .bottomTrailing)
+                                    LinearGradient(colors: [
+                                        Color(red: 0.3, green: 0.5, blue: 0.9), // Calming but engaging blue
+                                        Color(red: 0.4, green: 0.6, blue: 0.95)
+                                    ], startPoint: .topLeading, endPoint: .bottomTrailing)
                                 } else {
                                     backgroundColor(for: answer)
                                 }
@@ -58,11 +59,23 @@ struct questionView: View {
     private func backgroundColor(for answer: String) -> LinearGradient {
         if answer == selectedAnswer {
             return answer == question.correctAnswer ?
-            LinearGradient(colors: [.green, .green.opacity(0.7)], startPoint: .topLeading, endPoint: .bottomTrailing) :
-            LinearGradient(colors: [.red, .red.opacity(0.7)], startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(colors: [
+                Color(red: 0.2, green: 0.7, blue: 0.3), // Success green
+                Color(red: 0.3, green: 0.8, blue: 0.4)
+            ], startPoint: .topLeading, endPoint: .bottomTrailing) :
+            LinearGradient(colors: [
+                Color(red: 0.8, green: 0.2, blue: 0.2), // Error red
+                Color(red: 0.9, green: 0.3, blue: 0.3)
+            ], startPoint: .topLeading, endPoint: .bottomTrailing)
         }
         return answer == question.correctAnswer && selectedAnswer != nil ?
-        LinearGradient(colors: [.green, .green.opacity(0.7)], startPoint: .topLeading, endPoint: .bottomTrailing) :
-        LinearGradient(colors: [.gray, .gray.opacity(0.7)], startPoint: .topLeading, endPoint: .bottomTrailing)
+        LinearGradient(colors: [
+            Color(red: 0.2, green: 0.7, blue: 0.3),
+            Color(red: 0.3, green: 0.8, blue: 0.4)
+        ], startPoint: .topLeading, endPoint: .bottomTrailing) :
+        LinearGradient(colors: [
+            Color(red: 0.5, green: 0.5, blue: 0.5), // Neutral gray
+            Color(red: 0.6, green: 0.6, blue: 0.6)
+        ], startPoint: .topLeading, endPoint: .bottomTrailing)
     }
 }

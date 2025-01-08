@@ -27,6 +27,7 @@ struct mainView: View {
                 // Background Image
                 Image("description")
                     .resizable()
+                    .blur(radius: 10)
                     .frame(width: .infinity, height: .infinity)
                     .ignoresSafeArea()
                 
@@ -47,7 +48,6 @@ struct mainView: View {
                             TextField("Search medicines...", text: $searchText)
                                 .foregroundStyle(.black)
                                 .autocapitalization(.none)
-                                .textFieldStyle(PlainTextFieldStyle())
                             
                             if !searchText.isEmpty {
                                 Button(action: { searchText = "" }) {
@@ -64,6 +64,7 @@ struct mainView: View {
                                 .fill(.white)
                                 .shadow(color: .black.opacity(0.1), radius: 8)
                         )
+                        .ignoresSafeArea()
                         Spacer()
                     }
                     .padding(.horizontal)
