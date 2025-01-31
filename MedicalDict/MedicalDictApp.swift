@@ -1,4 +1,3 @@
-//
 //  MedicalDictApp.swift
 //  MedicalDict
 //
@@ -12,6 +11,8 @@ struct MedicalDictApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            
+            
         }
     }
 }

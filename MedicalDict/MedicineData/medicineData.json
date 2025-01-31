@@ -1,0 +1,946 @@
+[
+  {
+    "medicineName": "Paracetamol",
+    "description": "Paracetamol is a pain reliever and a fever reducer.",
+    "uses": [
+      "Pain relief",
+      "Fever reduction"
+    ],
+    "howToUse": "Take with water. Can be taken with or without food.",
+    "sideEffects": [
+      "Nausea",
+      "Rash",
+      "Liver damage (in overdose)"
+    ],
+    "precautions": [
+      "Avoid in liver disease",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Alcohol",
+      "Warfarin"
+    ],
+    "storageInstructions": "Store at room temperature, away from moisture and heat.",
+    "warnings": "Do not exceed 4g per day. Overdose can lead to severe liver damage."
+  },
+  {
+    "medicineName": "Ibuprofen",
+    "description": "Ibuprofen is a nonsteroidal anti-inflammatory drug (NSAID) used to reduce fever and treat pain or inflammation.",
+    "uses": [
+      "Pain relief",
+      "Fever reduction",
+      "Inflammation reduction"
+    ],
+    "howToUse": "Take with food or milk to prevent stomach upset.",
+    "sideEffects": [
+      "Nausea",
+      "Stomach pain",
+      "Dizziness",
+      "Kidney issues"
+    ],
+    "precautions": [
+      "Avoid in kidney disease",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Aspirin",
+      "Blood thinners"
+    ],
+    "storageInstructions": "Store in a cool, dry place away from light.",
+    "warnings": "Long-term use can increase the risk of heart attack or stroke."
+  },
+  {
+    "medicineName": "Aspirin",
+    "description": "Aspirin is used to reduce pain, fever, or inflammation and is also used as a blood thinner.",
+    "uses": [
+      "Pain relief",
+      "Fever reduction",
+      "Heart attack prevention"
+    ],
+    "howToUse": "Take with a full glass of water.",
+    "sideEffects": [
+      "Stomach pain",
+      "Heartburn",
+      "Increased risk of bleeding"
+    ],
+    "precautions": [
+      "Avoid in bleeding disorders",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Blood thinners",
+      "Ibuprofen"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture and heat.",
+    "warnings": "Do not give to children with viral infections due to Reye's syndrome risk."
+  },
+  {
+    "medicineName": "Cetirizine",
+    "description": "Cetirizine is an antihistamine used to relieve allergy symptoms.",
+    "uses": [
+      "Allergy relief",
+      "Hay fever",
+      "Urticaria"
+    ],
+    "howToUse": "Take once daily with or without food.",
+    "sideEffects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "precautions": [
+      "Avoid in severe liver or kidney disease",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Alcohol",
+      "Sedatives"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture.",
+    "warnings": "May cause drowsiness; avoid driving or operating heavy machinery."
+  },
+  {
+    "medicineName": "Amoxicillin",
+    "description": "Amoxicillin is an antibiotic used to treat various bacterial infections.",
+    "uses": [
+      "Bacterial infections",
+      "Sinusitis",
+      "Bronchitis"
+    ],
+    "howToUse": "Take with or without food. Continue taking even if you feel better.",
+    "sideEffects": [
+      "Nausea",
+      "Diarrhea",
+      "Allergic reaction"
+    ],
+    "precautions": [
+      "Inform your doctor of any allergies",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Oral contraceptives",
+      "Blood thinners"
+    ],
+    "storageInstructions": "Store in a cool, dry place.",
+    "warnings": "Complete the full course to prevent antibiotic resistance."
+  },
+  {
+    "medicineName": "Omeprazole",
+    "description": "Omeprazole is a proton pump inhibitor that decreases stomach acid.",
+    "uses": [
+      "Acid reflux",
+      "GERD",
+      "Stomach ulcers"
+    ],
+    "howToUse": "Take before meals, usually in the morning.",
+    "sideEffects": [
+      "Headache",
+      "Nausea",
+      "Diarrhea"
+    ],
+    "precautions": [
+      "Long-term use may lead to vitamin B12 deficiency",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Clopidogrel",
+      "Warfarin"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture.",
+    "warnings": "Do not crush or chew the tablets; swallow them whole."
+  },
+  {
+    "medicineName": "Loratadine",
+    "description": "Loratadine is an antihistamine that reduces the effects of natural histamine in the body.",
+    "uses": [
+      "Allergy relief",
+      "Hay fever",
+      "Hives"
+    ],
+    "howToUse": "Take once daily with or without food.",
+    "sideEffects": [
+      "Headache",
+      "Drowsiness",
+      "Dry mouth"
+    ],
+    "precautions": [
+      "Consult doctor if you have liver or kidney disease",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Alcohol",
+      "Sedatives"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture.",
+    "warnings": "May cause drowsiness; avoid driving or operating heavy machinery."
+  },
+  {
+    "medicineName": "Metformin",
+    "description": "Metformin is an oral diabetes medicine that helps control blood sugar levels.",
+    "uses": [
+      "Type 2 diabetes",
+      "Polycystic ovary syndrome (PCOS)"
+    ],
+    "howToUse": "Take with meals to reduce stomach upset.",
+    "sideEffects": [
+      "Nausea",
+      "Diarrhea",
+      "Stomach pain"
+    ],
+    "precautions": [
+      "Avoid in severe kidney disease",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Alcohol",
+      "Cimetidine"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture and heat.",
+    "warnings": "May cause lactic acidosis; monitor blood sugar regularly."
+  },
+  {
+    "medicineName": "Losartan",
+    "description": "Losartan is an angiotensin II receptor blocker (ARB) used to treat high blood pressure.",
+    "uses": [
+      "High blood pressure",
+      "Kidney disease in diabetes",
+      "Heart failure"
+    ],
+    "howToUse": "Take once daily with or without food.",
+    "sideEffects": [
+      "Dizziness",
+      "Cough",
+      "High potassium levels"
+    ],
+    "precautions": [
+      "Avoid in severe kidney or liver disease",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Potassium supplements",
+      "NSAIDs"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture.",
+    "warnings": "Do not use if pregnant; may cause harm to an unborn baby."
+  },
+  {
+    "medicineName": "Levothyroxine",
+    "description": "Levothyroxine is a synthetic form of the thyroid hormone used to treat hypothyroidism.",
+    "uses": [
+      "Hypothyroidism",
+      "Goiter"
+    ],
+    "howToUse": "Take on an empty stomach, 30 minutes before breakfast.",
+    "sideEffects": [
+      "Hair loss",
+      "Increased heart rate",
+      "Anxiety"
+    ],
+    "precautions": [
+      "Monitor thyroid levels regularly",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Calcium supplements",
+      "Iron supplements"
+    ],
+    "storageInstructions": "Store in a cool, dry place away from light.",
+    "warnings": "Do not switch brands without consulting your doctor."
+  },
+  {
+    "medicineName": "Atorvastatin",
+    "description": "Atorvastatin is a statin used to lower cholesterol and triglyceride levels in the blood.",
+    "uses": [
+      "High cholesterol",
+      "Cardiovascular disease prevention"
+    ],
+    "howToUse": "Take once daily, with or without food.",
+    "sideEffects": [
+      "Muscle pain",
+      "Diarrhea",
+      "Elevated liver enzymes"
+    ],
+    "precautions": [
+      "Avoid in liver disease",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Grapefruit juice",
+      "Warfarin"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture and light.",
+    "warnings": "Monitor liver function regularly; may cause muscle damage."
+  },
+  {
+    "medicineName": "Clopidogrel",
+    "description": "Clopidogrel is an antiplatelet medication that prevents blood clots.",
+    "uses": [
+      "Heart attack prevention",
+      "Stroke prevention",
+      "Peripheral artery disease"
+    ],
+    "howToUse": "Take once daily with or without food.",
+    "sideEffects": [
+      "Bleeding",
+      "Bruising",
+      "Stomach pain"
+    ],
+    "precautions": [
+      "Avoid in bleeding disorders",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Aspirin",
+      "NSAIDs"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture.",
+    "warnings": "May increase bleeding risk; avoid unnecessary trauma."
+  },
+  {
+    "medicineName": "Simvastatin",
+    "description": "Simvastatin is a statin used to lower cholesterol and triglycerides.",
+    "uses": [
+      "High cholesterol",
+      "Prevention of cardiovascular disease"
+    ],
+    "howToUse": "Take once daily in the evening.",
+    "sideEffects": [
+      "Muscle pain",
+      "Nausea",
+      "Headache"
+    ],
+    "precautions": [
+      "Avoid in liver disease",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Grapefruit juice",
+      "Warfarin"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture and light.",
+    "warnings": "Monitor liver function; risk of muscle damage."
+  },
+  {
+    "medicineName": "Hydrochlorothiazide",
+    "description": "Hydrochlorothiazide is a diuretic used to treat high blood pressure and fluid retention.",
+    "uses": [
+      "High blood pressure",
+      "Edema"
+    ],
+    "howToUse": "Take once daily in the morning with or without food.",
+    "sideEffects": [
+      "Dizziness",
+      "Low potassium",
+      "Dehydration"
+    ],
+    "precautions": [
+      "Avoid in kidney disease",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "NSAIDs",
+      "Corticosteroids"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture.",
+    "warnings": "May cause electrolyte imbalance; monitor blood pressure regularly."
+  },
+  {
+    "medicineName": "Gabapentin",
+    "description": "Gabapentin is used to treat nerve pain and seizures.",
+    "uses": [
+      "Nerve pain",
+      "Epilepsy",
+      "Restless legs syndrome"
+    ],
+    "howToUse": "Take with or without food, usually three times a day.",
+    "sideEffects": [
+      "Drowsiness",
+      "Dizziness",
+      "Fatigue"
+    ],
+    "precautions": [
+      "Avoid alcohol",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Antacids",
+      "Opioids"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture.",
+    "warnings": "May cause drowsiness; avoid driving or operating heavy machinery."
+  },
+  {
+    "medicineName": "Amlodipine",
+    "description": "Amlodipine is a calcium channel blocker used to treat high blood pressure and chest pain.",
+    "uses": [
+      "High blood pressure",
+      "Angina",
+      "Coronary artery disease"
+    ],
+    "howToUse": "Take once daily with or without food.",
+    "sideEffects": [
+      "Swelling",
+      "Fatigue",
+      "Dizziness"
+    ],
+    "precautions": [
+      "Avoid grapefruit juice",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Simvastatin",
+      "Grapefruit"
+    ],
+    "storageInstructions": "Store at room temperature away from light.",
+    "warnings": "May cause low blood pressure; monitor blood pressure regularly."
+  },
+  {
+    "medicineName": "Metoprolol",
+    "description": "Metoprolol is a beta-blocker used to treat high blood pressure, angina, and heart failure.",
+    "uses": [
+      "High blood pressure",
+      "Angina",
+      "Heart failure"
+    ],
+    "howToUse": "Take with or immediately after meals.",
+    "sideEffects": [
+      "Dizziness",
+      "Fatigue",
+      "Depression"
+    ],
+    "precautions": [
+      "Avoid in severe heart conditions",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Calcium channel blockers",
+      "Antihypertensives"
+    ],
+    "storageInstructions": "Store at room temperature away from light and moisture.",
+    "warnings": "Do not stop abruptly; may worsen heart problems."
+  },
+  {
+    "medicineName": "Pantoprazole",
+    "description": "Pantoprazole is a proton pump inhibitor that reduces stomach acid.",
+    "uses": [
+      "GERD",
+      "Stomach ulcers",
+      "Erosive esophagitis"
+    ],
+    "howToUse": "Take before meals, usually in the morning.",
+    "sideEffects": [
+      "Headache",
+      "Diarrhea",
+      "Nausea"
+    ],
+    "precautions": [
+      "Long-term use may lead to vitamin B12 deficiency",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Warfarin",
+      "Methotrexate"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture.",
+    "warnings": "Do not crush or chew tablets; swallow whole."
+  },
+  {
+    "medicineName": "Prednisone",
+    "description": "Prednisone is a corticosteroid used to treat inflammation and immune-related conditions.",
+    "uses": [
+      "Allergies",
+      "Asthma",
+      "Arthritis",
+      "Autoimmune diseases"
+    ],
+    "howToUse": "Take with food to reduce stomach upset.",
+    "sideEffects": [
+      "Weight gain",
+      "Increased appetite",
+      "Mood changes"
+    ],
+    "precautions": [
+      "Avoid in untreated infections",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "NSAIDs",
+      "Blood thinners"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture.",
+    "warnings": "Long-term use can lead to bone loss; taper off slowly."
+  },
+  {
+    "medicineName": "Ranitidine",
+    "description": "Ranitidine is an H2 blocker that reduces stomach acid production.",
+    "uses": [
+      "Acid reflux",
+      "GERD",
+      "Stomach ulcers"
+    ],
+    "howToUse": "Take with or without food, usually once or twice daily.",
+    "sideEffects": [
+      "Headache",
+      "Constipation",
+      "Dizziness"
+    ],
+    "precautions": [
+      "Monitor kidney function in long-term use",
+      "Consult doctor if pregnant"
+    ],
+    "interactions": [
+      "Warfarin",
+      "Ketoconazole"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture.",
+    "warnings": "Do not use with other acid-reducing medications without doctor’s advice."
+  },
+  {
+    "medicineName": "Azithromycin",
+    "description": "Azithromycin is an antibiotic used to treat a variety of bacterial infections.",
+    "uses": [
+      "Bacterial infections",
+      "Respiratory infections",
+      "Skin infections"
+    ],
+    "howToUse": "Take with or without food, as directed by your doctor.",
+    "sideEffects": [
+      "Nausea",
+      "Diarrhea",
+      "Abdominal pain"
+    ],
+    "precautions": [
+      "Consult doctor if liver or kidney issues",
+      "Avoid if allergic to macrolides"
+    ],
+    "interactions": [
+      "Antacids",
+      "Warfarin"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture and heat.",
+    "warnings": "Complete full course even if symptoms improve."
+  },
+  {
+    "medicineName": "Ciprofloxacin",
+    "description": "Ciprofloxacin is an antibiotic used to treat bacterial infections.",
+    "uses": [
+      "Bacterial infections",
+      "Urinary tract infections",
+      "Respiratory infections"
+    ],
+    "howToUse": "Take with or without food, avoid dairy products.",
+    "sideEffects": [
+      "Nausea",
+      "Diarrhea",
+      "Dizziness"
+    ],
+    "precautions": [
+      "Avoid in pregnancy",
+      "May increase risk of tendon rupture"
+    ],
+    "interactions": [
+      "Antacids",
+      "Theophylline"
+    ],
+    "storageInstructions": "Store at room temperature away from light and moisture.",
+    "warnings": "Avoid excessive sun exposure; may cause photosensitivity."
+  },
+  {
+    "medicineName": "Furosemide",
+    "description": "Furosemide is a diuretic used to treat fluid retention and high blood pressure.",
+    "uses": [
+      "Edema",
+      "High blood pressure",
+      "Heart failure"
+    ],
+    "howToUse": "Take with or without food, as prescribed by your doctor.",
+    "sideEffects": [
+      "Dizziness",
+      "Dehydration",
+      "Low potassium levels"
+    ],
+    "precautions": [
+      "Consult doctor if kidney disease",
+      "Monitor electrolyte levels"
+    ],
+    "interactions": [
+      "NSAIDs",
+      "Lithium"
+    ],
+    "storageInstructions": "Store at room temperature, away from moisture.",
+    "warnings": "May cause dehydration and electrolyte imbalances."
+  },
+  {
+    "medicineName": "Fluoxetine",
+    "description": "Fluoxetine is an antidepressant belonging to the SSRI class.",
+    "uses": [
+      "Depression",
+      "Anxiety disorders",
+      "Obsessive-compulsive disorder"
+    ],
+    "howToUse": "Take with or without food, preferably in the morning.",
+    "sideEffects": [
+      "Nausea",
+      "Insomnia",
+      "Sexual dysfunction"
+    ],
+    "precautions": [
+      "Monitor for suicidal thoughts",
+      "Avoid alcohol"
+    ],
+    "interactions": [
+      "MAO inhibitors",
+      "Aspirin"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture.",
+    "warnings": "May take several weeks to feel the full effect."
+  },
+  {
+    "medicineName": "Montelukast",
+    "description": "Montelukast is a leukotriene receptor antagonist used to manage asthma and allergies.",
+    "uses": [
+      "Asthma",
+      "Allergic rhinitis",
+      "Exercise-induced bronchoconstriction"
+    ],
+    "howToUse": "Take once daily in the evening, with or without food.",
+    "sideEffects": [
+      "Headache",
+      "Abdominal pain",
+      "Mood changes"
+    ],
+    "precautions": [
+      "Consult doctor if history of mental illness",
+      "Avoid in liver disease"
+    ],
+    "interactions": [
+      "Phenobarbital",
+      "Rifampin"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture and heat.",
+    "warnings": "Not for acute asthma attacks."
+  },
+  {
+    "medicineName": "Allopurinol",
+    "description": "Allopurinol is used to reduce uric acid levels in the blood.",
+    "uses": [
+      "Gout",
+      "Kidney stones",
+      "Hyperuricemia"
+    ],
+    "howToUse": "Take with food or after a meal to reduce stomach upset.",
+    "sideEffects": [
+      "Rash",
+      "Nausea",
+      "Diarrhea"
+    ],
+    "precautions": [
+      "Consult doctor if kidney or liver disease",
+      "Avoid alcohol"
+    ],
+    "interactions": [
+      "Warfarin",
+      "Thiazide diuretics"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture.",
+    "warnings": "Drink plenty of fluids to prevent kidney stones."
+  },
+  {
+    "medicineName": "Clonazepam",
+    "description": "Clonazepam is a benzodiazepine used to treat seizures and panic disorders.",
+    "uses": [
+      "Seizures",
+      "Panic disorders",
+      "Anxiety"
+    ],
+    "howToUse": "Take with or without food, as prescribed by your doctor.",
+    "sideEffects": [
+      "Drowsiness",
+      "Dizziness",
+      "Fatigue"
+    ],
+    "precautions": [
+      "Avoid alcohol",
+      "May cause dependency"
+    ],
+    "interactions": [
+      "Opioids",
+      "Antihistamines"
+    ],
+    "storageInstructions": "Store at room temperature away from light and moisture.",
+    "warnings": "Do not stop abruptly; may cause withdrawal symptoms."
+  },
+  {
+    "medicineName": "Warfarin",
+    "description": "Warfarin is an anticoagulant used to prevent blood clots.",
+    "uses": [
+      "Blood clot prevention",
+      "Stroke prevention",
+      "Heart attack prevention"
+    ],
+    "howToUse": "Take with or without food, at the same time each day.",
+    "sideEffects": [
+      "Bleeding",
+      "Bruising",
+      "Nausea"
+    ],
+    "precautions": [
+      "Monitor INR levels regularly",
+      "Avoid vitamin K-rich foods"
+    ],
+    "interactions": [
+      "Aspirin",
+      "NSAIDs"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture and light.",
+    "warnings": "May increase risk of bleeding; avoid activities that may cause injury."
+  },
+  {
+    "medicineName": "Albuterol",
+    "description": "Albuterol is a bronchodilator used to treat breathing difficulties.",
+    "uses": [
+      "Asthma",
+      "Bronchospasm",
+      "COPD"
+    ],
+    "howToUse": "Inhale as directed, usually every 4-6 hours as needed.",
+    "sideEffects": [
+      "Tremors",
+      "Nervousness",
+      "Increased heart rate"
+    ],
+    "precautions": [
+      "Consult doctor if heart disease or high blood pressure",
+      "Avoid overuse"
+    ],
+    "interactions": [
+      "Beta-blockers",
+      "Diuretics"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture and heat.",
+    "warnings": "Overuse can reduce its effectiveness."
+  },
+  {
+    "medicineName": "Tamsulosin",
+    "description": "Tamsulosin is used to improve urination in men with benign prostatic hyperplasia (BPH).",
+    "uses": [
+      "Benign prostatic hyperplasia (BPH)",
+      "Urinary retention"
+    ],
+    "howToUse": "Take 30 minutes after the same meal each day.",
+    "sideEffects": [
+      "Dizziness",
+      "Headache",
+      "Nasal congestion"
+    ],
+    "precautions": [
+      "Consult doctor if kidney or liver disease",
+      "May cause low blood pressure"
+    ],
+    "interactions": [
+      "PDE5 inhibitors",
+      "Antihypertensives"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture.",
+    "warnings": "May cause dizziness; rise slowly from sitting or lying positions."
+  },
+  {
+    "medicineName": "Omeprazole",
+    "description": "Omeprazole is a proton pump inhibitor used to treat acid reflux and stomach ulcers.",
+    "uses": [
+      "GERD",
+      "Stomach ulcers",
+      "Heartburn"
+    ],
+    "howToUse": "Take before meals, usually once a day.",
+    "sideEffects": [
+      "Headache",
+      "Diarrhea",
+      "Abdominal pain"
+    ],
+    "precautions": [
+      "Consult doctor if liver disease",
+      "May increase risk of bone fractures"
+    ],
+    "interactions": [
+      "Clopidogrel",
+      "Warfarin"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture and heat.",
+    "warnings": "Long-term use may increase risk of vitamin B12 deficiency."
+  },
+  {
+    "medicineName": "Metformin",
+    "description": "Metformin is an oral diabetes medication used to control blood sugar levels.",
+    "uses": [
+      "Type 2 diabetes",
+      "Polycystic ovary syndrome (PCOS)"
+    ],
+    "howToUse": "Take with food to reduce gastrointestinal side effects.",
+    "sideEffects": [
+      "Nausea",
+      "Diarrhea",
+      "Stomach upset"
+    ],
+    "precautions": [
+      "Avoid if kidney disease",
+      "Monitor blood sugar regularly"
+    ],
+    "interactions": [
+      "Insulin",
+      "Alcohol"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture and heat.",
+    "warnings": "May cause lactic acidosis in rare cases."
+  },
+  {
+    "medicineName": "Gabapentin",
+    "description": "Gabapentin is used to treat nerve pain and seizures.",
+    "uses": [
+      "Nerve pain",
+      "Seizures",
+      "Restless legs syndrome"
+    ],
+    "howToUse": "Take with or without food, as prescribed by your doctor.",
+    "sideEffects": [
+      "Drowsiness",
+      "Dizziness",
+      "Fatigue"
+    ],
+    "precautions": [
+      "May cause drowsiness",
+      "Avoid alcohol"
+    ],
+    "interactions": [
+      "Opioids",
+      "Antihistamines"
+    ],
+    "storageInstructions": "Store at room temperature away from light and moisture.",
+    "warnings": "Do not stop abruptly; may cause withdrawal symptoms."
+  },
+  {
+    "medicineName": "Amlodipine",
+    "description": "Amlodipine is a calcium channel blocker used to treat high blood pressure and angina.",
+    "uses": [
+      "High blood pressure",
+      "Angina",
+      "Coronary artery disease"
+    ],
+    "howToUse": "Take with or without food, usually once daily.",
+    "sideEffects": [
+      "Swelling",
+      "Dizziness",
+      "Flushing"
+    ],
+    "precautions": [
+      "Consult doctor if heart disease",
+      "May cause low blood pressure"
+    ],
+    "interactions": [
+      "Simvastatin",
+      "Grapefruit juice"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture and heat.",
+    "warnings": "May cause dizziness; avoid driving or operating machinery."
+  },
+  {
+    "medicineName": "Doxycycline",
+    "description": "Doxycycline is an antibiotic used to treat bacterial infections and acne.",
+    "uses": [
+      "Bacterial infections",
+      "Acne",
+      "Malaria prevention"
+    ],
+    "howToUse": "Take with a full glass of water, avoid lying down for 30 minutes after taking.",
+    "sideEffects": [
+      "Nausea",
+      "Diarrhea",
+      "Sensitivity to sunlight"
+    ],
+    "precautions": [
+      "Avoid excessive sun exposure",
+      "Consult doctor if liver or kidney disease"
+    ],
+    "interactions": [
+      "Antacids",
+      "Calcium supplements"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture and light.",
+    "warnings": "Not recommended for use during pregnancy."
+  },
+  {
+    "medicineName": "Lisinopril",
+    "description": "Lisinopril is an ACE inhibitor used to treat high blood pressure and heart failure.",
+    "uses": [
+      "High blood pressure",
+      "Heart failure",
+      "Post-heart attack treatment"
+    ],
+    "howToUse": "Take with or without food, usually once daily.",
+    "sideEffects": [
+      "Dizziness",
+      "Cough",
+      "Headache"
+    ],
+    "precautions": [
+      "Avoid during pregnancy",
+      "May cause kidney problems"
+    ],
+    "interactions": [
+      "Potassium supplements",
+      "NSAIDs"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture.",
+    "warnings": "May cause a dry cough; consult your doctor if bothersome."
+  },
+  {
+    "medicineName": "Losartan",
+    "description": "Losartan is an angiotensin II receptor blocker (ARB) used to treat high blood pressure.",
+    "uses": [
+      "High blood pressure",
+      "Chronic kidney disease",
+      "Heart failure"
+    ],
+    "howToUse": "Take with or without food, as prescribed by your doctor.",
+    "sideEffects": [
+      "Dizziness",
+      "Fatigue",
+      "Low blood pressure"
+    ],
+    "precautions": [
+      "Monitor kidney function",
+      "Avoid during pregnancy"
+    ],
+    "interactions": [
+      "NSAIDs",
+      "Potassium supplements"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture and heat.",
+    "warnings": "May cause lightheadedness; rise slowly from sitting or lying positions."
+  },
+  {
+    "medicineName": "Sertraline",
+    "description": "Sertraline is a selective serotonin reuptake inhibitor (SSRI) used to treat depression and anxiety.",
+    "uses": [
+      "Depression",
+      "Anxiety disorders",
+      "Obsessive-compulsive disorder (OCD)"
+    ],
+    "howToUse": "Take with or without food, usually once daily.",
+    "sideEffects": [
+      "Nausea",
+      "Insomnia",
+      "Dizziness"
+    ],
+    "precautions": [
+      "Monitor for suicidal thoughts",
+      "Avoid alcohol"
+    ],
+    "interactions": [
+      "MAO inhibitors",
+      "Aspirin"
+    ],
+    "storageInstructions": "Store at room temperature away from moisture.",
+    "warnings": "May take several weeks to see the full effect."
+  }
+]

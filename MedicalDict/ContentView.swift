@@ -11,16 +11,22 @@ struct ContentView: View {
     
     var body: some View {
         TabView{
-            Tab("", systemImage: "gamecontroller.circle.fill") {
+            
+            Tab("", systemImage: "figure.yoga") {
+                yogaView()
+            }
+            
+            Tab("", systemImage: "gamecontroller") {
                 GameView()
             }
             
-            Tab("", systemImage: "magnifyingglass.circle") {
+            Tab("", systemImage: "magnifyingglass") {
                 mainView()
             }
         }
     }
 }
+
 #Preview {
     ContentView()
 }
