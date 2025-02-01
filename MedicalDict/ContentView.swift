@@ -12,10 +12,6 @@ struct ContentView: View {
     var body: some View {
         TabView{
             
-            Tab("", systemImage: "figure.yoga") {
-                yogaView()
-            }
-            
             Tab("", systemImage: "gamecontroller") {
                 GameView()
             }

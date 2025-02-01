@@ -8,63 +8,77 @@
 import SwiftUI
 
 struct yogaView: View {
+    let gridItems = [
+        GridItem(.flexible(), spacing: 30),
+        GridItem(.flexible(), spacing: 30),
+        GridItem(.flexible(), spacing: 30)
+    ]
+    
     @State var fullScreenView: Bool = false
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Yoga")
-                .font(.system(size: 45, weight: .bold))
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [.blue, .purple],x
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
-                .padding()
-            
+        NavigationStack {
             ScrollView {
-                HStack() {
-                    VStack(alignment: .leading, spacing: 15) {
-                        ForEach(getBenefits(), id: \.self) { benefit in
-                            BenefitRow(text: benefit)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                        }
-                    }
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(
-                        RoundedRectangle(cornerRadius: 25)
-                            .fill(.thinMaterial)
-                    )
-                    
-                    Button {
-                        withAnimation {
-                            fullScreenView = true
-                        }
-                    } label: {
-                        Text("History")
-                            .font(.title2.bold())
-                            .foregroundColor(.white)
-                            .background(
-                                RoundedRectangle(cornerRadius: 25)
-                                    .foregroundStyle(.yellow)
-                                    .frame(width: 160, height: 50)
+                VStack(spacing: 20) {
+                    Text("Yoga")
+                        .font(.system(size: 45, weight: .bold))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.blue, .purple],
+                                startPoint: .leading,
+                                endPoint: .trailing
                             )
+                        )
+                        .padding()
+                    
+                    HStack() {
+                        VStack(alignment: .leading, spacing: 15) {
+                            ForEach(getBenefits(), id: \.self) { benefit in
+                                BenefitRow(text: benefit)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                            }
+                        }
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(
+                            RoundedRectangle(cornerRadius: 25)
+                                .fill(.thinMaterial)
+                        )
+                        
+                        Button {
+                            withAnimation {
+                                fullScreenView = true
+                            }
+                        } label: {
+                            Text("History")
+                                .font(.title2.bold())
+                                .foregroundColor(.white)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .foregroundStyle(.yellow)
+                                        .frame(width: 160, height: 50)
+                                )
+                        }
+                        .rotationEffect(.degrees(90))
                     }
-                    .rotationEffect(.degrees(90))
+                    
+                    LazyVGrid(columns: gridItems, spacing: 20) {
+                        ForEach(1...10, id: \.self) { image in
+                            NavigationLink(destination: yogDetailsView()) {
+                                Image("lotusPose")
+                                    .resizable()
+                                    .clipShape(Circle())
+                                    .frame(width: 200, height: 200)
+                            }
+                        }
+                    }
+                }
+                .padding(.horizontal)
+                .fullScreenCover(isPresented: $fullScreenView) {
+                    history()
                 }
             }
         }
-        .padding(.horizontal)
-        .fullScreenCover(isPresented: $fullScreenView) {
-            history()
-        }
-        
-        ScrollView(.horizontal){
-            
-        }
-        
     }
     
     private func getBenefits() -> [String] {
@@ -91,4 +105,4 @@ struct BenefitRow: View {
 
 #Preview {
     yogaView()
-}
+j}
