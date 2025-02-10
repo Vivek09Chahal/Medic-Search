@@ -32,6 +32,13 @@ struct mainView: View {
                         .font(.title)
                         .padding()
                     
+                    // Search Results
+                    if !searchText.isEmpty {
+                        onSearchView(searchText: searchText, medicines: medicines)
+                    } else {
+                        alphabeticView(medicines: medicines)
+                    }
+                    
                     HStack(alignment: .center) {
                         HStack {
                             Image(systemName: "magnifyingglass")
@@ -63,21 +70,27 @@ struct mainView: View {
                                 .shadow(color: .black.opacity(0.1), radius: 8)
                         )
                         .ignoresSafeArea()
-                    }
-                    
-                    // Search Results
-                    if !searchText.isEmpty {
-                        onSearchView(searchText: searchText, medicines: medicines)
-                    } else {
-                        alphabeticView(medicines: medicines)
+                        
+                        Button{
+                            
+                        } label: {
+                            Image(systemName: "magnifyingglass")
+                                .foregroundStyle(.white)
+                                .background{
+                                    RoundedRectangle(cornerRadius: 15)
+                                        .frame(width: 45, height: 45)
+                                        .foregroundStyle(.blue)
+                                        .padding()
+                                }
+                        }
                     }
                 }
             }
             .background{
                 LinearGradient(
                     colors: [
-                        Color(red: 0.88, green: 0.37, blue: 0.64),
-                        Color(red: 0.83, green: 0.37, blue: 0.17)
+                        Color(red: 0.88, green: 0.27, blue: 0.44),
+                        Color(red: 0.83, green: 0.47, blue: 0.10)
                     ],
                     startPoint: .topLeading,
                     endPoint: .bottomTrailing

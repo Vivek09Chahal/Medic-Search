@@ -99,13 +99,12 @@ struct DescriptionPage: View {
         .background {
             LinearGradient(
                 colors: [
-                    Color(red: 0.88, green: 0.37, blue: 0.64),
-                    Color(red: 0.83, green: 0.37, blue: 0.17)
+                    Color(red: 0.88, green: 0.27, blue: 0.44),
+                    Color(red: 0.83, green: 0.47, blue: 0.10)
                 ],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
-            )
-            .ignoresSafeArea()
+            ).ignoresSafeArea()
         }
     }
 }
@@ -128,6 +127,6 @@ private func blockView(height: CGFloat, @ViewBuilder content: () -> some View) -
         .frame(maxWidth: .infinity, minHeight: height)
         .background(
             RoundedRectangle(cornerRadius: 25)
-                .foregroundStyle(.ultraThinMaterial)
+                .foregroundStyle(.thinMaterial)
         )
 }
