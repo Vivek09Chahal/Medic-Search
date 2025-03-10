@@ -17,7 +17,7 @@ struct alphabeticView: View {
     
     var body: some View {
         LazyVGrid(columns: [
-            GridItem(.adaptive(minimum: 180))
+            GridItem(.adaptive(minimum: 70))
         ], spacing: 16) {
             ForEach(Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), id: \.self) { letter in
                 let isAvailable = availableLetters.contains(letter)

@@ -32,18 +32,11 @@ struct mainView: View {
                         .font(.title)
                         .padding()
                     
-                    // Search Results
-                    if !searchText.isEmpty {
-                        onSearchView(searchText: searchText, medicines: medicines)
-                    } else {
-                        alphabeticView(medicines: medicines)
-                    }
-                    
                     HStack(alignment: .center) {
                         HStack {
                             Image(systemName: "magnifyingglass")
                                 .foregroundStyle(.black)
-                                .padding(.leading, 12)
+                                .padding(.horizontal, 20)
                             
                             TextField("Search medicines...", text: $searchText)
                                 .foregroundStyle(.green)
@@ -68,21 +61,16 @@ struct mainView: View {
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(.white)
                                 .shadow(color: .black.opacity(0.1), radius: 8)
+                                .padding(.horizontal)
                         )
                         .ignoresSafeArea()
-                        
-                        Button{
-                            
-                        } label: {
-                            Image(systemName: "magnifyingglass")
-                                .foregroundStyle(.white)
-                                .background{
-                                    RoundedRectangle(cornerRadius: 15)
-                                        .frame(width: 45, height: 45)
-                                        .foregroundStyle(.blue)
-                                        .padding()
-                                }
-                        }
+                    }
+                    
+                    // Search Results
+                    if !searchText.isEmpty {
+                        onSearchView(searchText: searchText, medicines: medicines)
+                    } else {
+                        alphabeticView(medicines: medicines)
                     }
                 }
             }
