@@ -102,6 +102,7 @@ struct GameView: View {
             }
             .frame(maxWidth: geometry.size.width, maxHeight: geometry.size.height)
             .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+//            .scrollBounceBehavior(.basedOnSize)
         }
         .alert("Game Complete!", isPresented: $showScore) {
             Button("Play Again", action: resetGame)

@@ -8,7 +8,11 @@
 6. Integrated local notifications for medication reminders using `UserNotifications` framework
 7. Implemented efficient JSON data management for medicine database and game content. Used MVVM architecture.
 
-![Simulator Screenshot - iPhone 16 Pro - 2025-04-02 at 12 42 25](https://github.com/user-attachments/assets/dfbce597-607b-4c17-bb98-6a561ed11b28)
-![Simulator Screenshot - iPhone 16 Pro - 2025-04-02 at 12 42 32](https://github.com/user-attachments/assets/cdc7b48f-19f5-439f-b88e-690b63956b69)
-![Simulator Screenshot - iPhone 16 Pro - 2025-04-02 at 12 42 36](https://github.com/user-attachments/assets/cd4579c4-3b50-4371-8192-2af0d87dbd82)
-![Simulator Screenshot - iPhone 16 Pro - 2025-04-02 at 12 42 53](https://github.com/user-attachments/assets/1f45f372-669e-4463-971e-7bd90b746ec3)
+<p float="left">
+    <img src="https://github.com/user-attachments/assets/dfbce597-607b-4c17-bb98-6a561ed11b28" width="45%" />
+    <img src="https://github.com/user-attachments/assets/cdc7b48f-19f5-439f-b88e-690b63956b69" width="45%" />
+</p>
+<p float="left">
+    <img src="https://github.com/user-attachments/assets/cd4579c4-3b50-4371-8192-2af0d87dbd82" width="45%" />
+    <img src="https://github.com/user-attachments/assets/1f45f372-669e-4463-971e-7bd90b746ec3" width="45%" />
+</p>
