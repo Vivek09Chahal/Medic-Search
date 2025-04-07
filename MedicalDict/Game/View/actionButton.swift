@@ -29,3 +29,9 @@ struct actionButton: View {
         }
     }
 }
+
+#Preview {
+    actionButton(title: "Preview", gradient: [.blue, .green]) {
+        print("Action Triggered")
+    }
+}

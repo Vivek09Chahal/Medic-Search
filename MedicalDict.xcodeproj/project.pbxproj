@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C2786D92CDCAF2900009870 /* popUpAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2786D82CDCAF2900009870 /* popUpAnimation.swift */; };
 		0C98855A2CB96DE00017599C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9885592CB96DE00017599C /* ContentView.swift */; };
 		0C9D5D2B2C6A42870037E1B0 /* MedicalDictApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */; };
 		0C9D5D2F2C6A42880037E1B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */; };
 		0C9D5D322C6A42880037E1B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9D5D312C6A42880037E1B0 /* Preview Assets.xcassets */; };
 		0CB7812F2D4E5B400086A67B /* Drug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB7812D2D4E5B400086A67B /* Drug.swift */; };
-		0CB781302D4E5B400086A67B /* ColorOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB781292D4E5B400086A67B /* ColorOption.swift */; };
 		0CB781312D4E5B400086A67B /* DoseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB7812C2D4E5B400086A67B /* DoseRow.swift */; };
 		0CB781322D4E5B400086A67B /* medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB7812B2D4E5B400086A67B /* medicine.swift */; };
 		0CB781332D4E5B400086A67B /* scheduleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB7812E2D4E5B400086A67B /* scheduleData.swift */; };
@@ -21,24 +19,14 @@
 		0CB7813E2D4E5B500086A67B /* medicineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB781362D4E5B500086A67B /* medicineList.swift */; };
 		0CB781402D4E5B500086A67B /* medicineEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB781352D4E5B500086A67B /* medicineEditor.swift */; };
 		0CB781412D4E5B500086A67B /* medicineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB781372D4E5B500086A67B /* medicineRow.swift */; };
-		E2BCA0D32C77470700D58470 /* medicineData.json in Resources */ = {isa = PBXBuildFile; fileRef = E2BCA0D22C77470700D58470 /* medicineData.json */; };
-		E2BCA0D52C77478F00D58470 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D42C77478F00D58470 /* Medicine.swift */; };
-		E2BCA0D72C7749AF00D58470 /* medicineJsonLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA0D62C7749AF00D58470 /* medicineJsonLoad.swift */; };
-		E2F6D8392CB7E0E40013BF6E /* gameJsonLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D8382CB7E0E40013BF6E /* gameJsonLoad.swift */; };
-		E2F6D83E2CB7E5A50013BF6E /* gameData.json in Resources */ = {isa = PBXBuildFile; fileRef = E2F6D83D2CB7E5A50013BF6E /* gameData.json */; };
-		E2F6D8402CB7E5E00013BF6E /* gameVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6D83F2CB7E5E00013BF6E /* gameVariables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C2444402C9BCB6200837D5A /* MedicalDict.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MedicalDict.entitlements; sourceTree = "<group>"; };
-		0C2444412C9BF8FE00837D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		0C2786D82CDCAF2900009870 /* popUpAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpAnimation.swift; sourceTree = "<group>"; };
 		0C9885592CB96DE00017599C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0C9D5D272C6A42870037E1B0 /* MedicalDict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalDict.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDictApp.swift; sourceTree = "<group>"; };
 		0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C9D5D312C6A42880037E1B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0CB781292D4E5B400086A67B /* ColorOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorOption.swift; sourceTree = "<group>"; };
 		0CB7812B2D4E5B400086A67B /* medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicine.swift; sourceTree = "<group>"; };
 		0CB7812C2D4E5B400086A67B /* DoseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseRow.swift; sourceTree = "<group>"; };
 		0CB7812D2D4E5B400086A67B /* Drug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drug.swift; sourceTree = "<group>"; };
@@ -47,22 +35,19 @@
 		0CB781362D4E5B500086A67B /* medicineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineList.swift; sourceTree = "<group>"; };
 		0CB781372D4E5B500086A67B /* medicineRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineRow.swift; sourceTree = "<group>"; };
 		0CB781382D4E5B500086A67B /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
-		E2BCA0D22C77470700D58470 /* medicineData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = medicineData.json; sourceTree = "<group>"; };
-		E2BCA0D42C77478F00D58470 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
-		E2BCA0D62C7749AF00D58470 /* medicineJsonLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineJsonLoad.swift; sourceTree = "<group>"; };
-		E2F6D8382CB7E0E40013BF6E /* gameJsonLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameJsonLoad.swift; sourceTree = "<group>"; };
-		E2F6D83D2CB7E5A50013BF6E /* gameData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gameData.json; sourceTree = "<group>"; };
-		E2F6D83F2CB7E5E00013BF6E /* gameVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameVariables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		0CBE88CA2D2EA5F30056416C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				DescriptionPageView/defaultData.swift,
 				DescriptionPageView/DescriptionPage.swift,
 				DescriptionPageView/listView.swift,
 				DescriptionPageView/stringView.swift,
-				extensions/SwiftUIView.swift,
+				"Medicine Data/Medicine.swift",
+				"Medicine Data/medicineData.json",
+				"Medicine Data/medicineJsonLoad.swift",
 				VIew/alphabeticView.swift,
 				VIew/medicineSearch.swift,
 				VIew/MedicnesForLetterView.swift,
@@ -75,6 +60,7 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0CBE88B22D2EA5A40056416C /* Medicine */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (0CBE88CA2D2EA5F30056416C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Medicine; sourceTree = "<group>"; };
 		0CBE88B32D2EA5BD0056416C /* Game */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Game; sourceTree = "<group>"; };
+		0CE498652D9F761100E784D0 /* Extension */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Extension; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,17 +74,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C9885582CB96D850017599C /* GameData */ = {
-			isa = PBXGroup;
-			children = (
-				E2F6D83F2CB7E5E00013BF6E /* gameVariables.swift */,
-				E2F6D8382CB7E0E40013BF6E /* gameJsonLoad.swift */,
-				E2F6D83D2CB7E5A50013BF6E /* gameData.json */,
-				0C2786D82CDCAF2900009870 /* popUpAnimation.swift */,
-			);
-			path = GameData;
-			sourceTree = "<group>";
-		};
 		0C9D5D1E2C6A42870037E1B0 = {
 			isa = PBXGroup;
 			children = (
@@ -118,15 +93,11 @@
 		0C9D5D292C6A42870037E1B0 /* MedicalDict */ = {
 			isa = PBXGroup;
 			children = (
-				0C2444412C9BF8FE00837D5A /* Info.plist */,
-				0C2444402C9BCB6200837D5A /* MedicalDict.entitlements */,
 				0C9D5D2A2C6A42870037E1B0 /* MedicalDictApp.swift */,
 				0C9885592CB96DE00017599C /* ContentView.swift */,
 				0CBE88B22D2EA5A40056416C /* Medicine */,
-				E27F46B62C74A0D3008C08E4 /* MedicineData */,
-				0CB781282D4E5B270086A67B /* MedicineSchedule */,
+				0CB781282D4E5B270086A67B /* Schedule */,
 				0CBE88B32D2EA5BD0056416C /* Game */,
-				0C9885582CB96D850017599C /* GameData */,
 				0C9D5D2E2C6A42880037E1B0 /* Assets.xcassets */,
 				0C9D5D302C6A42880037E1B0 /* Preview Content */,
 			);
@@ -141,10 +112,10 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		0CB781282D4E5B270086A67B /* MedicineSchedule */ = {
+		0CB781282D4E5B270086A67B /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
-				0CB781292D4E5B400086A67B /* ColorOption.swift */,
+				0CE498652D9F761100E784D0 /* Extension */,
 				0CB781352D4E5B500086A67B /* medicineEditor.swift */,
 				0CB781362D4E5B500086A67B /* medicineList.swift */,
 				0CB781372D4E5B500086A67B /* medicineRow.swift */,
@@ -154,17 +125,7 @@
 				0CB7812D2D4E5B400086A67B /* Drug.swift */,
 				0CB7812E2D4E5B400086A67B /* scheduleData.swift */,
 			);
-			path = MedicineSchedule;
-			sourceTree = "<group>";
-		};
-		E27F46B62C74A0D3008C08E4 /* MedicineData */ = {
-			isa = PBXGroup;
-			children = (
-				E2BCA0D62C7749AF00D58470 /* medicineJsonLoad.swift */,
-				E2BCA0D42C77478F00D58470 /* Medicine.swift */,
-				E2BCA0D22C77470700D58470 /* medicineData.json */,
-			);
-			path = MedicineData;
+			path = Schedule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +145,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				0CBE88B32D2EA5BD0056416C /* Game */,
+				0CE498652D9F761100E784D0 /* Extension */,
 			);
 			name = MedicalDict;
 			productName = MedicalDict;
@@ -198,7 +160,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					0C9D5D262C6A42870037E1B0 = {
 						CreatedOnToolsVersion = 15.4;
@@ -228,8 +190,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2BCA0D32C77470700D58470 /* medicineData.json in Resources */,
-				E2F6D83E2CB7E5A50013BF6E /* gameData.json in Resources */,
 				0C9D5D322C6A42880037E1B0 /* Preview Assets.xcassets in Resources */,
 				0C9D5D2F2C6A42880037E1B0 /* Assets.xcassets in Resources */,
 			);
@@ -242,9 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2F6D8402CB7E5E00013BF6E /* gameVariables.swift in Sources */,
 				0CB7812F2D4E5B400086A67B /* Drug.swift in Sources */,
-				0CB781302D4E5B400086A67B /* ColorOption.swift in Sources */,
 				0CB781312D4E5B400086A67B /* DoseRow.swift in Sources */,
 				0CB781322D4E5B400086A67B /* medicine.swift in Sources */,
 				0CB781332D4E5B400086A67B /* scheduleData.swift in Sources */,
@@ -253,10 +211,6 @@
 				0CB781402D4E5B500086A67B /* medicineEditor.swift in Sources */,
 				0CB781412D4E5B500086A67B /* medicineRow.swift in Sources */,
 				0C9D5D2B2C6A42870037E1B0 /* MedicalDictApp.swift in Sources */,
-				0C2786D92CDCAF2900009870 /* popUpAnimation.swift in Sources */,
-				E2BCA0D72C7749AF00D58470 /* medicineJsonLoad.swift in Sources */,
-				E2BCA0D52C77478F00D58470 /* Medicine.swift in Sources */,
-				E2F6D8392CB7E0E40013BF6E /* gameJsonLoad.swift in Sources */,
 				0C98855A2CB96DE00017599C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +253,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = X5PUMWNFN8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -362,6 +317,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = X5PUMWNFN8;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -394,7 +350,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MedicalDict/Preview Content\"";
-				DEVELOPMENT_TEAM = X5PUMWNFN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MedicalDict/Info.plist;
@@ -434,7 +389,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MedicalDict/Preview Content\"";
-				DEVELOPMENT_TEAM = X5PUMWNFN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MedicalDict/Info.plist;

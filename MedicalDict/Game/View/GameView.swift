@@ -18,10 +18,6 @@ struct GameView: View {
     @State private var isGameStarted = false
     @State private var showCorrectView = false
     
-    private var currentQuestion: Game {
-        questions[currentQuestionIndex]
-    }
-    
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -112,6 +108,33 @@ struct GameView: View {
         .onAppear(perform: startTimer)
         .onDisappear(perform: stopTimer)
     }
+}
+
+#Preview {
+    GameView()
+}
+
+struct GradientBarsView: View {
+    var body: some View {
+        GeometryReader { geometry in
+            LinearGradient(
+                colors: [
+                    Color(red: 0.48, green: 0.67, blue: 0.3),
+                    Color(red: 0.43, green: 0.76, blue: 0.7)
+                ],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+        }
+        .ignoresSafeArea()
+    }
+}
+
+extension GameView{
+    
+    private var currentQuestion: Game {
+        questions[currentQuestionIndex]
+    }
     
     private func handleAnswer(_ answer: String) {
         guard selectedAnswer == nil else { return } // Prevent multiple selections
@@ -185,24 +208,5 @@ struct GameView: View {
         selectedAnswer = nil
         startTimer()
     }
-}
-
-#Preview {
-    GameView()
-}
-
-struct GradientBarsView: View {
-    var body: some View {
-        GeometryReader { geometry in
-            LinearGradient(
-                colors: [
-                    Color(red: 0.48, green: 0.67, blue: 0.3),
-                    Color(red: 0.43, green: 0.76, blue: 0.7)
-                ],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-        }
-        .ignoresSafeArea()
-    }
+    
 }

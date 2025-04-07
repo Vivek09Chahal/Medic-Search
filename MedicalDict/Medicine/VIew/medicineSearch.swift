@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct mainView: View {
+    
     @State private var medicines: [Medicine] = loadMedicineJSONData()
     @State var searchText: String = ""
     @State private var searchIsActive = false
