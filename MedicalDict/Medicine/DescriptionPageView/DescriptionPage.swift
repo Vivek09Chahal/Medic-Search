@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct DescriptionPage: View {
-    
-    @StateObject var vm = medicinePreview()
     var medicine: Medicine
     
     var body: some View {
@@ -112,10 +110,16 @@ struct DescriptionPage: View {
 }
 
 // Preview
-struct DescriptionPage_Previews: PreviewProvider {
-    static var previews: some View {
-        DescriptionPage(medicine: dev.MedicinePreview)
-    }
+#Preview {
+    DescriptionPage(medicine: Medicine(/*Done*/medicineName: "Paracetamol",
+                                               /*Done*/description: "Paracetamol is a pain reliever and a fever reducer.",
+                                               /*Done*/uses: ["Allergy relief", "Hay fever", "Hives"],
+                                               /*Done*/sideEffects: ["Nausea", "Rash", "Liver damage (in overdose)"],
+                                               /*Done*/howToUse: "Take with water. Can be taken with or without food.",
+                                               /*Done*/precautions: ["Avoid in liver disease", "Consult doctor if pregnant"],
+                                               interactions: ["Alcohol", "Warfarin"],
+                                               storageInstructions: "Store at room temperature, away from moisture and heat.",
+                                               warnings: "Do not exceed 4g per day. Overdose can lead to severe liver damage."))
 }
 
 private func blockView(height: CGFloat, @ViewBuilder content: () -> some View) -> some View {

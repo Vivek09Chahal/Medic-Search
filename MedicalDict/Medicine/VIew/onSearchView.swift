@@ -12,6 +12,13 @@ struct onSearchView: View {
     var searchText: String
     var medicines: [Medicine]
     
+    var filteredMedicines: [Medicine] {
+        if searchText.isEmpty {
+            return []
+        }
+        return medicines.filter { $0.medicineName.lowercased().contains(searchText.lowercased()) }
+    }
+    
     var body: some View {
             LazyVStack(spacing: 10) {
                 ForEach(filteredMedicines) { medicine in
@@ -33,12 +40,5 @@ struct onSearchView: View {
                 }
             }
             .ignoresSafeArea()
-    }
-    
-    var filteredMedicines: [Medicine] {
-        if searchText.isEmpty {
-            return []
-        }
-        return medicines.filter { $0.medicineName.lowercased().contains(searchText.lowercased()) }
     }
 }
