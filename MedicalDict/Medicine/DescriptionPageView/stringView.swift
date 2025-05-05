@@ -13,16 +13,18 @@ func stringView(title: String, summary: String, imageString: String, color: Colo
             HStack(){
                 Image(systemName: imageString)
                     .resizable()
-                    .frame(width: 30, height: 30)
+                    .frame(width: 25, height: 25)
                     .foregroundStyle(color)
                 Text(title)
-                    .font(.title)
+                    .font(.title3)
             }
             
             Divider()
-            Text("• \(summary)")
-                .font(.title2)
+            Text(summary)
+                .font(.body)
         }
-        .padding()
+        .padding(7)
     }
+    .padding()
+    .backGround()
 }

@@ -11,11 +11,18 @@ struct alphabeticView: View {
     
     var medicines: [Medicine]
     
+    var body: some View {
+        alphaView
+    }
+}
+
+extension alphabeticView {
+    
     private var availableLetters: Set<Character> {
         Set(medicines.map { $0.medicineName.uppercased().first ?? " " })
     }
     
-    var body: some View {
+    var alphaView: some View {
         LazyVGrid(columns: [
             GridItem(.adaptive(minimum: 70))
         ], spacing: 16) {
@@ -38,4 +45,5 @@ struct alphabeticView: View {
         }
         .padding()
     }
+    
 }

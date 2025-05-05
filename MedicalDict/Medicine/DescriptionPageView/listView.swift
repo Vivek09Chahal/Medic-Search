@@ -10,26 +10,29 @@ import SwiftUI
 func listView(arrayData: [String], section: String, icon: String, color: Color) -> some View {
     VStack(alignment: .leading) {
         HStack {
+            // image
             Image(systemName: icon)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 30)
+                .frame(width: 25, height: 25)
                 .foregroundColor(color)
             
+            //title
             Text(section)
-                .font(.title)
+                .font(.title3)
         }
         .padding()
         
         ScrollView {
             VStack(alignment: .leading) {
                 ForEach(arrayData, id: \.self) { data in
-                    Text("→ " + data)
-                        .font(.title2)
+                    Text("• " + data)
+                        .font(.body)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
             }
             .padding(.horizontal)
         }
     }
+    .padding(7)
+    .backGround()
 }
