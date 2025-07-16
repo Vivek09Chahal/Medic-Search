@@ -6,7 +6,7 @@ enum DrugType: String, Codable, CaseIterable {
     var symbol: String {
         switch self {
         case .Pills: return "pills"
-        case .Liquid: return "liquid"
+        case .Liquid: return "drop"
         }
     }
 }

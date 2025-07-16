@@ -32,7 +32,7 @@ func loadGameJSONData() -> [Game] {
 //        return []
 //    }
 //    
-//    return questions
+//    return questionsg
     
     do{
         return try decoder.decode([Game].self, from: data)

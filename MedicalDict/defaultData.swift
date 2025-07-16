@@ -22,4 +22,8 @@ class DefaultData {
                            interactions: ["Alcohol", "Warfarin"],
                            storageInstructions: "Store at room temperature, away from moisture and heat.",
                            warnings: "Do not exceed 4g per day. Overdose can lead to severe liver damage.")
+    
+    var gameData: Game = Game(question: "Which mineral is important for bone health?",
+                              answer: ["Iron", "Calcium", "Potassium", "Sodium"],
+                              correctAnswer: "Calcium")
 }

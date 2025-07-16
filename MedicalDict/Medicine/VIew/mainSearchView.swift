@@ -18,21 +18,20 @@ struct mainView: View {
     var body: some View {
         
         NavigationStack {
-            // Search Bar
-            ScrollView{
-                VStack() {
-                    
-                    Text("Medicine Dictionary")
-                        .font(.title)
-                        .padding()
-                    
-                    searchView()
-                    
-                    // Search Results
-                    if !searchText.isEmpty {
-                        onSearchView(searchText: searchText, medicines: medicines)
-                    } else {
-                        alphabeticView(medicines: medicines)
+            VStack{
+                // Search Bar
+                Text("Medicine Dictionary")
+                    .font(.title)
+                    .padding()
+                searchView()
+                ScrollView{
+                    VStack() {
+                        // Search Results
+                        if !searchText.isEmpty {
+                            onSearchView(searchText: searchText, medicines: medicines)
+                        } else {
+                            alphabeticView(medicines: medicines)
+                        }
                     }
                 }
             }
@@ -46,13 +45,6 @@ struct mainView: View {
 }
 
 extension mainView {
-    
-    var filteredMedicines: [Medicine] {
-        if searchText.isEmpty {
-            return []
-        }
-        return medicines.filter { $0.medicineName.lowercased().contains(searchText.lowercased()) }
-    }
     
     func searchView() -> some View {
         HStack(alignment: .center) {
@@ -74,7 +66,7 @@ extension mainView {
                     Button(action: { searchText = "" }) {
                         Image(systemName: "xmark.circle.fill")
                             .foregroundStyle(.black)
-                            .padding(.trailing, 8)
+                            .padding(.horizontal)
                     }
                 }
             }

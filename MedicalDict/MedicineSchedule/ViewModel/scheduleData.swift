@@ -4,22 +4,22 @@ class DrugData: ObservableObject {
     
     @Published var drugs: [Drug] = [
         Drug(color: Color.red.rgbaColor,
-              title: "Prednisone",
+             title: "Prednisone",
              drugType: .Pills,
              quantity: "10mg",
              frequency: .daily,
              duration: .fiveDays,
-              notificationsEnabled: false,
-              startDate: Date.roundedHoursFromNow(60 * 60 * 24 * 30)
+             notificationsEnabled: false,
+             startDate: Date.roundedHoursFromNow(60 * 60 * 24 * 30)
             ),
         Drug(color: Color.yellow.rgbaColor,
-              title: "Hyrimoz",
+             title: "Hyrimoz",
              drugType: .Liquid,
              quantity: "1",
              frequency: .every10Days,
              duration: .oneMonth,
-              notificationsEnabled: false,
-              startDate: Date.roundedHoursFromNow(60 * 60 * 20)
+             notificationsEnabled: false,
+             startDate: Date.roundedHoursFromNow(60 * 60 * 20)
             )
     ]
     
@@ -67,13 +67,13 @@ class DrugData: ObservableObject {
         FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
             .appendingPathComponent("drugs.data")
     }
-   
+    
     func load() {
         do {
             
             let fileURL = try DrugData.getDrugsFileURL()
             let data = try Data(contentsOf: fileURL)
-
+            
             drugs = try JSONDecoder().decode([Drug].self, from: data)
             
             print("Drugs loaded: \(drugs.count)")
@@ -84,7 +84,7 @@ class DrugData: ObservableObject {
         }
     }
     
-   
+    
     func save() {
         do {
             let fileURL = try DrugData.getDrugsFileURL()

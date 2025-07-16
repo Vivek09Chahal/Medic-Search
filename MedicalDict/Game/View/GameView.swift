@@ -38,6 +38,7 @@ struct GameView: View {
                 } else {
                     VStack(spacing: 20) {
                         if isGameStarted {
+                            
                             // Status Bar
                             HStack(spacing: 20) {
                                 statusCapsule(text: "\(currentQuestionIndex + 1)/\(questions.count)", color: .primary)
@@ -190,6 +191,7 @@ struct GameView: View {
 #Preview {
     GameView()
 }
+
 
 struct GradientBarsView: View {
     var body: some View {

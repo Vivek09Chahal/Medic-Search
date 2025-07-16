@@ -15,17 +15,17 @@ struct questionView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             Text(question.question)
-                .font(.title)
+                .font(.title2)
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .center)
                 .multilineTextAlignment(.center)
             
             ForEach(Array(question.answer.enumerated()), id: \.element) { index, answer in
-                Button(action: {
+                Button{
                     withAnimation(.spring()) {
                         onAnswerSelected(answer)
                     }
-                }) {
+                } label: {
                     Text(answer)
                         .font(.title3)
                         .padding()
@@ -78,4 +78,12 @@ struct questionView: View {
             Color(red: 0.6, green: 0.6, blue: 0.6)
         ], startPoint: .topLeading, endPoint: .bottomTrailing)
     }
+}
+
+#Preview {
+    questionView(
+        question: DefaultData.shared.gameData,
+        onAnswerSelected: { _ in },
+        selectedAnswer: .constant("Calcium")
+    )
 }
